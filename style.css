@@ -1,0 +1,35 @@
+/*
+*
+Theme name: AeroSpace
+Author: AeroSpace Team
+Version: 1.0.0
+Description: Custom theme for AeroSpace. 
+*
+*/
+
+/*--------------------------------------------------------------
+HOX! Please remember to comment everything! It will be easier to
+navigate trough this code when everything is commented what 
+does this code do and what it's for. Thank you. 
+
+Style.css is for importing other css-files to it. 
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+@import "css/setup.css";
+@import "css/404.css";
+
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "css/menus.css";
+@import "css/header.css";
+@import "css/footer.css";
+@import "css/post-and-pages.css";
+@import "css/widgets.css";
+
+@import "css/archive.css";
+@import "css/search.css";
