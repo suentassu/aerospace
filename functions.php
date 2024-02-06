@@ -12,8 +12,9 @@ if ( ! defined( '_S_VERSION' ) ) {
     // Enqueue scripts and styles.
 function aerospace_scripts() {
     // Theme styles
-	wp_enqueue_style( 'aerospace-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'aerospace-style', 'rtl', 'replace' );
+	
+
+    wp_enqueue_style('aerospace-style', get_template_directory_uri() . '/style.css', array(), _S_VERSION );
 
     // Theme JavaScript - 
     wp_enqueue_script( 'aerospace-custom-js', get_template_directory_uri() . '/js/custom.js', array(), _S_VERSION, true );
