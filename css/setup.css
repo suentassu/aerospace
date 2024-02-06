@@ -4,26 +4,25 @@ General CSS
 
 :root {
   /* Main colors */
-  --main-red: ;
-  --dark-red: ;
-  --dark-gray: ;
-  --border: ;
-  --nav-background: ;
+  --main-red: #6d1824;
+  --dark-gray: #1e1e1e;
+  --border: #707070;
+  --nav-background: rgb(67, 27, 33);
 
-  --main-text: ;
-  --links: ;
+  --main-text: #ffffff;
+  --links: #ffffff;
 
   /* Overlays */
-  --background-overlay: ;
-  --pic-overlay: ;
-  --footer: ;
+  --background-overlay: rgb(30, 30, 30, 0.5);
+  --pic-overlay: rgb(0, 0, 0, 0.5);
+  --footer: rgb(0, 0, 0, 0.8);
 
   /* Shadows */
   --main-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  --main-text-shadow: 2px 3px 7px rgba(81, 67, 21, 0.2);
+  --main-text-shadow: 2px 3px 7px rgba(81, 21, 21, 0.2);
 
   /* Main fonts */
-  --main-font: "Saira Condensed";
+  --main-font: "Saira Condensed" sans-serif;
   --header-font: ;
 
   /* main padding */
@@ -39,9 +38,9 @@ General CSS
 
 /* Main styles */
 body {
-  background-color: var(--);
-  color: var(--);
-  font-family: var(--);
+  background-color: var(--main-red);
+  color: var(--main-text);
+  font-family: var(--main-font);
   font-size: 15px;
 }
 /* Links */
@@ -57,15 +56,15 @@ a:hover {
 a:visited {
   color: var(--);
 }
-/* Headers, p, span */
+/* Headers, p */
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: var(--);
+  font-family: var(--main-font);
   text-transform: uppercase;
-  text-shadow: var(--);
+  text-shadow: var(--main-text-shadow);
   font-weight: 500;
   padding: 5px 0;
 }
@@ -75,12 +74,7 @@ p {
 blockquote {
   padding: 1.5em;
   margin: 2em;
-  border-left: 2px solid var(--);
-  color: var(--);
+  border-left: 2px solid var(--main-red);
+  color: var(--main-text);
   font-style: italic;
-}
-span {
-  color: var(--);
-  font-family: var(--);
-  font-size: 15px;
 }
