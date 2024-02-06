@@ -12,6 +12,9 @@ General CSS
   --main-text: #ffffff;
   --links: #ffffff;
 
+  --main-button: #ffffffc4;
+  --hover-button: #fff;
+
   /* Overlays */
   --background-overlay: rgb(30, 30, 30, 0.5);
   --pic-overlay: rgb(0, 0, 0, 0.5);
@@ -24,6 +27,8 @@ General CSS
   /* Main fonts */
   --main-font: "Saira Condensed" sans-serif;
   --header-font: ;
+
+  --button-font: "Monaco", monospace;;
 
   /* main padding */
   --main-padding: 25px;
@@ -77,4 +82,25 @@ blockquote {
   border-left: 2px solid var(--main-red);
   color: var(--main-text);
   font-style: italic;
+}
+
+/* Buttons */
+button {
+  background-color: var(--main-button);
+  color: var(--dark-gray);
+  border: none;
+  border-radius: 12px 0px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: var(--button-font);
+  font-size: 20px;
+  transition-duration: 0.3s;
+}
+
+button:hover{
+  background-color: var(--hover-button);
+  padding: 15px 25px;
+  font-size: 25px;
 }
