@@ -7,3 +7,26 @@
 <?php wp_head(); ?>
 </head>
 <body>
+
+<nav id="navbar">
+    <div class="nav-container">
+        <div class="main-title">
+            TITLE HERE
+        </div>
+        <div class="nav-icon">
+            <a href="<a href="javascript:void(0);" onclick="naviLinks()">">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </a>
+        </div>
+    </div>
+        <div class="nav-links-container">
+            <div class="nav-links">
+                <div id="navLinks">
+                    <?php
+                        wp_nav_menu();
+                    ?>
+                </div>
+                
+            </div>
+        </div>
+</nav>

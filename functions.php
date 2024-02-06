@@ -20,7 +20,7 @@ function aerospace_scripts() {
 
     // Theme icons, FontAwesome
     // CHANGE SOURCE URI!! 
-    wp_enqueue_style( 'load-fa', '#sourceURL CHANGE THIS!!!#' );
+    wp_enqueue_style( 'load-fa', 'https://kit.fontawesome.com/ecffccb6d7.js' );
 }
 add_action( 'wp_enqueue_scripts', 'aerospace_scripts' );
 
