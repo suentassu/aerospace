@@ -6,5 +6,5 @@ nav {
     width: 100%;
 }
 #navbar {
-    background-color: ;
+    background-color: var(--m);
 }
