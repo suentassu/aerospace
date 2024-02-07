@@ -17,6 +17,7 @@ get_header();
         <div class="intro-text"><p>Oops! Could not find the page you were looking for.</p></div>
 
         <div class="button"><button type="button">Home</button></div>
+    </div>
 </main>
 
 <?php
