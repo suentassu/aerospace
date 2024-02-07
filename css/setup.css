@@ -23,13 +23,13 @@ General CSS
 
   /* Shadows */
   --main-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  --main-text-shadow: 2px 3px 7px rgba(81, 21, 21, 0.2);
+  --main-text-shadow: 2px 3px 7px rgba(5, 2, 2, 0.357);
 
   /* Main fonts */
-  --main-font: "Saira Condensed" sans-serif;
-  --header-font: ;
+  --main-font: "Roboto Condensed", sans-serif;
+  --header-font: "Saira Condensed", sans-serif;
 
-  --button-font: "Monaco", monospace;;
+  --button-font: "Monaco", monospace;
 
   /* main padding */
   --main-padding: 25px;
@@ -47,7 +47,9 @@ body {
   background: rgb(147, 31, 31);
   color: var(--main-text);
   font-family: var(--main-font);
-  font-size: 15px;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  font-weight: 300;
 }
 /* Links */
 a {
@@ -68,11 +70,11 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: var(--main-font);
+  font-family: var(--header-font);
   text-transform: uppercase;
   text-shadow: var(--main-text-shadow);
   font-weight: 500;
-  padding: 5px 0;
+  letter-spacing: 0.1em;
 }
 p {
   margin: 1em 0;
@@ -84,6 +86,12 @@ blockquote {
   color: var(--main-text);
   font-style: italic;
 }
+
+
+main {
+  margin: 20px;
+}
+
 
 /* Buttons */
 button {
@@ -100,7 +108,7 @@ button {
   transition-duration: 0.3s;
 }
 
-button:hover{
+button:hover {
   background-color: var(--hover-button);
   padding: 15px 25px;
   font-size: 25px;

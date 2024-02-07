@@ -15,22 +15,29 @@
             <?php bloginfo(); ?>
         </div>
         <div class="nav-icon">
-            <a href="javascript:void(0);" onclick="naviLinks()">
-                <i class="fa-solid fa-bars"></i>
+            <span class="icon-mobile" onclick="openNavi()"><i class="fa-solid fa-bars"></i></span>
+
+            <span class="icon-tablet" onclick="openNaviTablet()"><i class="fa-solid fa-bars"></i></span>
+            
+            <span class="icon-desk" onclick="openNaviDesk()"><i class="fa-solid fa-bars"></i></span>
+        </div>
+
+
+    </div>
+    <div id="aeroNav" class="nav-overlay">
+            <a href="javascript:void(0)" class="nav-closebtn" onclick="closeNav()">
+                <i class="fa-solid fa-x"></i>
             </a>
+            
+        <div class="nav-overlay-content">
+            <?php
+                wp_nav_menu();
+            ?>
         </div>
     </div>
-        <div class="nav-links-container">
-            <div class="nav-links">
-                <div id="navLinks">
-                    <?php
-                        wp_nav_menu();
-                    ?>
-                </div>
-                
-            </div>
-        </div>
 </nav>
+
+
 
 <main>
 
