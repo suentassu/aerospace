@@ -10,7 +10,7 @@ General CSS
   --nav-background: rgb(67, 27, 33);
 
   --main-text: #ffffff;
-  --links: #ffffff;
+  --links: #c4c4c4;
 
   --main-button: #ffffffc4;
   --hover-button: #fff;
@@ -18,7 +18,8 @@ General CSS
   /* Overlays */
   --background-overlay: rgb(30, 30, 30, 0.5);
   --pic-overlay: rgb(0, 0, 0, 0.5);
-  --footer: rgb(0, 0, 0, 0.8);
+  --footer: rgba(0, 0, 0, 0.8);
+  --nav: rgba(3, 3, 3, 0.8);
 
   /* Shadows */
   --main-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -43,7 +44,7 @@ General CSS
 
 /* Main styles */
 body {
-  background-color: var(--main-red);
+  background: rgb(147, 31, 31);
   color: var(--main-text);
   font-family: var(--main-font);
   font-size: 15px;
@@ -51,11 +52,11 @@ body {
 /* Links */
 a {
   text-decoration: none;
-  color: var(--);
+  color: var(--links);
   transition: 0.5s ease;
 }
 a:hover {
-  color: var(--);
+  color: var(--dark-gray);
   transition: 0.5s ease;
 }
 a:visited {

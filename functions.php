@@ -12,16 +12,10 @@ if ( ! defined( '_S_VERSION' ) ) {
     // Enqueue scripts and styles.
 function aerospace_scripts() {
     // Theme styles
-	
-
     wp_enqueue_style('aerospace-style', get_template_directory_uri() . '/style.css', array(), _S_VERSION );
 
     // Theme JavaScript - 
-    wp_enqueue_script( 'aerospace-custom-js', get_template_directory_uri() . '/js/custom.js', array(), _S_VERSION, true );
-
-    // Theme icons, FontAwesome
-    // CHANGE SOURCE URI!! 
-    wp_enqueue_style( 'load-fa', 'https://kit.fontawesome.com/ecffccb6d7.js' );
+    wp_enqueue_script( 'aerospace-custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery'), _S_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'aerospace_scripts' );
 

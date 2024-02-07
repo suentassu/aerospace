@@ -10,5 +10,7 @@ Built exclusively to AeroSpace project. This document is meant for developers.
 This theme is not for sale or public distribution. 
 
 
-== Plug-ins ==
-you will need few plug ins for this theme to work properly. 
+== Plugins ==
+You will need few plugins for this theme to work properly.
+
+Font Awesome 4.4.0 plugin (icons)

@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
 <?php wp_head(); ?>
@@ -11,11 +12,11 @@
 <nav id="navbar">
     <div class="nav-container">
         <div class="main-title">
-            TITLE HERE
+            <?php bloginfo(); ?>
         </div>
         <div class="nav-icon">
-            <a href="<a href="javascript:void(0);" onclick="naviLinks()">">
-                <i class="fa-solid fa-bars fa-xl"></i>
+            <a href="javascript:void(0);" onclick="naviLinks()">
+                <i class="fa-solid fa-bars"></i>
             </a>
         </div>
     </div>
@@ -30,3 +31,6 @@
             </div>
         </div>
 </nav>
+
+<main>
+
