@@ -5,13 +5,14 @@ CSS for Header
 nav {
   width: 100%;
   background-color: var(--nav-background);
-  position: fixed;
+  position: sticky;
   z-index: 1;
   transition: 1s;
   font-size: 2em;
   top: 0;
   padding: 10px;
 }
+
 nav ul {
   list-style-type: none;
 }
@@ -105,4 +106,3 @@ nav li {
     display: block;
   }
 }
-
