@@ -1,9 +1,14 @@
 /* Main navigation (show/hide links in mobile/tablet)*/
-function naviLinks() {
-  var x = document.getElementById("navLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
+function openNavi() {
+  document.getElementById("aeroNav").style.width = "100%";
+}
+function openNaviTablet() {
+  document.getElementById("aeroNav").style.width = "50%";
+}
+function openNaviDesk() {
+  document.getElementById("aeroNav").style.width = "25%";
+}
+
+function closeNav() {
+  document.getElementById("aeroNav").style.width = "0%";
 }
