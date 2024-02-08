@@ -125,6 +125,7 @@ button:hover {
 
 .courses-row{
   display: flex;
+  flex-direction: column;
 }
 
 .course{
@@ -133,4 +134,13 @@ button:hover {
   margin: 50px 10px;
   border: #1e1e1e 2px;
   height: 420px;
+}
+
+@media screen and (min-width: 768px) {
+  .courses-row{
+    flex-direction: row;
+  }
+  .course{
+    flex: 0%;
+  }
 }

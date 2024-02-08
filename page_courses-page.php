@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            main{
-                justify-content: center;
-            }
-        </style>
-    </head>
 <?php
 /**
  * Template Name: Courses Page
