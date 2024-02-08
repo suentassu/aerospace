@@ -6,28 +6,35 @@ CSS for Post and Pages
 COURSES PAGE
 */
 .courses-section-inner {
-    width: 250px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .courses-row{
+.courses-row{
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .course{
+.course{
     padding: 20px;
     margin: 50px 10px;
     border: #1e1e1e 2px;
-    height: 420px;
-  }
+    height: 500px;
+    text-align: center;
+}
   
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
     .courses-row{
       flex-direction: row;
     }
     .course{
       flex: 0%;
     }
-  }
+}
+
+@media screen and (min-width: 1500px) {
+    .courses-row{
+      padding: 0px 300px;
+    }
+}
