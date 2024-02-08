@@ -1,3 +1,23 @@
 /*--------------------------------------------------------------
 CSS for Footer
 --------------------------------------------------------------*/
+
+footer {
+  margin-top: auto;
+  background: no-repeat url("../img/footer-astronaut.jpg");
+  background-position: 25% 20%;
+  height: 70vh;
+}
+.footer-overlay {
+  background-color: var(--footer);
+  height: 100%;
+  width: 100%;
+}
+.red-line {
+  height: 5vh;
+  background-color: var(--main-red);
+}
+
+.footer-container {
+  padding: 1.2em;
+}

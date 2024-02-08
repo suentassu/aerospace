@@ -16,9 +16,9 @@ General CSS
   --hover-button: #fff;
 
   /* Overlays */
-  --background-overlay: rgb(30, 30, 30, 0.5);
+  --background-overlay: rgb(30, 30, 30, 0.4);
   --pic-overlay: rgb(0, 0, 0, 0.5);
-  --footer: rgba(0, 0, 0, 0.8);
+  --footer: rgba(0, 0, 0, 0.6);
   --nav: rgba(3, 3, 3, 0.8);
 
   /* Shadows */
@@ -44,7 +44,7 @@ General CSS
 
 /* Main styles */
 body {
-  background: rgb(147, 31, 31);
+  background: rgb(110, 94, 94);
   color: var(--main-text);
   font-family: var(--main-font);
   font-size: 1.2em;
@@ -88,8 +88,11 @@ blockquote {
 }
 
 main {
-  margin: 20px;
+  margin: 1.2em;
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
 }
 
 /* Buttons */
