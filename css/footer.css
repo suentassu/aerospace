@@ -1,3 +1,51 @@
 /*--------------------------------------------------------------
 CSS for Footer
 --------------------------------------------------------------*/
+
+.red-line {
+  height: 5vh;
+  background-color: var(--main-red);
+}
+footer {
+  margin-top: auto;
+  background: no-repeat url("../img/footer-astronaut.jpg");
+  background-position: 25% 20%;
+  min-height: 70vh;
+}
+.footer-overlay {
+  background-color: var(--footer);
+  min-height: 100%;
+  min-width: 100%;
+}
+.footer-container {
+  padding: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+.footer-content {
+  margin: 1.2em;
+  width: 60%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+  }
+  .footer-content {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .footer-container {
+    justify-content: flex-start;
+    width: 80%;
+    margin: auto;
+  }
+  .footer-content {
+    width: 20%;
+  }
+}
