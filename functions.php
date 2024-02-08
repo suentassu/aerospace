@@ -43,3 +43,18 @@ function aerospace_setup()
 }
 endif; // aerospace_setup
 add_action( 'after_setup_theme', 'aerospace_setup' );
+
+// Custom widgets (use classic widgets!)
+function custom_widgets() {
+
+	register_sidebar( array(
+		'name'          => 'Footer Widget',
+		'id'            => 'footer_widget',
+		'before_widget' => '<div class="footer-content">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>',
+	) );
+
+}
+add_action( 'widgets_init', 'custom_widgets' );

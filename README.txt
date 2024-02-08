@@ -15,3 +15,4 @@ You will need few plugins for this theme to work properly.
 
 Font Awesome 4.4.0 plugin (icons)
 Advanced Custom Fields (ACF) made by WP Engines
+Classic Widgets By WordPress Contributors
