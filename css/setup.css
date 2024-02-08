@@ -113,15 +113,21 @@ button:hover {
   font-size: 25px;
 }
 
-/* Columns */
-.row {
+/* Courses-page */
+
+.courses-section-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.courses-row{
   display: flex;
 }
 
-.column{
+.course{
   flex: 33%;
   padding: 20px;
-  margin: 50px;
+  margin: 50px 10px;
   border: #1e1e1e 2px;
   height: 420px;
 }

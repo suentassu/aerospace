@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
+            main{
+                justify-content: center;
+            }
+        </style>
+    </head>
 <?php
 /**
  * Template Name: Courses Page
@@ -8,23 +15,24 @@
  */
 get_header();
 ?>
-<main id="site-content">
-    <div class="section-inner">
-        <h1 class="title"> Courses </h1>
-        <div class="floating-astronaut"></div>
-        <div class="row">
-            <div class="column" style="background-color: #aaa">
+
+    <div class="courses-section-inner">
+        <h1 class="courses-title"> Courses </h1>
+        <div class="floating-astronaut">
+
+        </div>
+        <div class="courses-row">
+            <div class="course" style="background-color: #aaa">
                 <p>yadaYADAYyafya</p>
             </div>
-            <div class="column" style="background-color: #aaa">
+            <div class="course" style="background-color: #aaa">
                 <p>yadaYADAYyafya</p>
             </div>
-            <div class="column" style="background-color: #aaa">
+            <div class="course" style="background-color: #aaa">
                 <p>yadaYADAYyafya</p>
             </div>
         </div>
     </div>
-</main>
 
 <?php 
 get_footer();
