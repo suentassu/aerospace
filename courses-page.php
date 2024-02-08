@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <?php
 /**
  * Template Name: Courses Page

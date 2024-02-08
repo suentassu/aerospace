@@ -115,32 +115,3 @@ button:hover {
   padding: 15px 25px;
   font-size: 25px;
 }
-
-/* Courses-page */
-
-.courses-section-inner {
-  display: flex;
-  flex-direction: column;
-}
-
-.courses-row{
-  display: flex;
-  flex-direction: column;
-}
-
-.course{
-  flex: 33%;
-  padding: 20px;
-  margin: 50px 10px;
-  border: #1e1e1e 2px;
-  height: 420px;
-}
-
-@media screen and (min-width: 768px) {
-  .courses-row{
-    flex-direction: row;
-  }
-  .course{
-    flex: 0%;
-  }
-}
