@@ -87,11 +87,10 @@ blockquote {
   font-style: italic;
 }
 
-
 main {
   margin: 20px;
+  display: flex;
 }
-
 
 /* Buttons */
 button {
