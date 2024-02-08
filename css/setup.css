@@ -122,6 +122,7 @@ button:hover {
 .column{
   flex: 33%;
   padding: 20px;
+  margin: 50px;
   border: #1e1e1e 2px;
-  height: 300px;
+  height: 420px;
 }
