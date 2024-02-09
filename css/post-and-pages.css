@@ -38,3 +38,24 @@ COURSES PAGE
       padding: 0px 300px;
     }
 }
+
+.astronaut-div {
+  height: 100px;
+}
+
+@keyframes astronaut-floating {
+  0%    {left: 0px; top: 0px;}
+  25%   {left: 10px; top: 0px;}
+  50%   {left: 20px; top: 10px; rotate: 3deg;}
+  75%   {left: 10px; top: 20px;}
+  100%  {left: 0px; top: 10px;}
+}
+
+.floating-astronaut{
+  height: 200px;
+  float: right;
+  padding-left: 175px;
+  transform: scaleX(-1);
+  position: relative;
+  animation: astronaut-floating 20s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
+}
