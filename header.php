@@ -12,7 +12,7 @@
 <nav id="navbar">
     <div class="nav-container">
         <div class="main-title">
-            <a href="<?php echo get_home_url(); ?>"><?php bloginfo(); ?></a>
+            <?php bloginfo(); ?>
         </div>
         <div class="nav-icon">
             <span class="icon-mobile" onclick="openNavi()"><i class="fa-solid fa-bars"></i></span>
