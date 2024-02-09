@@ -76,11 +76,17 @@ h5 {
   font-weight: 500;
   letter-spacing: 0.1em;
 }
+.first-title {
+  text-align: center;
+}
 p {
   margin: 1em 0;
 }
 ul {
   list-style-type: none;
+}
+ol {
+  margin-left: 1em;
 }
 blockquote {
   padding: 1.5em;
@@ -91,13 +97,10 @@ blockquote {
 }
 
 main {
-  margin: 1.2em;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  min-height: 100svh;
+  padding: 2em 0;
 }
-
 /* Buttons */
 button {
   background-color: var(--main-button);
