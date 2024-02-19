@@ -21,6 +21,14 @@ CSS for Post and Pages
 /*
 COURSES PAGE
 */
+
+/* Back button */
+.back-button {
+  color: white;
+  font-size: 1rem;
+}
+
+/* Course choices */
 .courses-section-inner {
     width: 100%;
     display: flex;
@@ -30,48 +38,81 @@ COURSES PAGE
 .courses-row{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
   
 .course{
-    padding: 20px;
+    padding: 20px 0px;
     margin: 50px 10px;
-    border: #1e1e1e 2px;
     height: 500px;
+    border: 2px #707070 solid;
     text-align: center;
-}
-  
-@media screen and (min-width: 900px) {
-    .courses-row{
-      flex-direction: row;
-    }
-    .course{
-      flex: 0%;
-    }
+    background: url("../img/stars-1.jpg") no-repeat center; /* EACH COURSE WILL HAVE THEIR OWN PICTURE THIS IS TEMPORARY */
 }
 
-@media screen and (min-width: 1500px) {
-    .courses-row{
-      padding: 0px 300px;
-    }
+.course-title {
+  padding: 15px;
 }
 
+.title-bar {
+  width: 100%;
+  background-color: #6d1824;
+  height: 50px;
+}
+
+.course-overlay{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Floating Astronaut */
 .astronaut-div {
-  height: 100px;
+  height: 75px;
 }
 
 @keyframes astronaut-floating {
-  0%    {left: 0px; top: 0px;}
-  25%   {left: 10px; top: 0px;}
-  50%   {left: 20px; top: 10px; rotate: 3deg;}
-  75%   {left: 10px; top: 20px;}
-  100%  {left: 0px; top: 10px;}
+  50% {transform: rotate(3deg) translateX(25px) translateY(-20px)}
 }
 
 .floating-astronaut{
-  height: 200px;
+  height: 175px;
   float: right;
-  padding-left: 175px;
-  transform: scaleX(-1);
   position: relative;
+  z-index: 1;
   animation: astronaut-floating 20s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;
+}
+
+/* Course */
+
+
+/* Responsiveness */
+
+@media screen and (min-width: 900px) {
+  .courses-row{
+    flex-direction: row;
+  }
+  .course{
+    flex: 0%;
+  }
+  .floating-astronaut {
+    height: 230px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .courses-row{
+    padding: 0px 300px;
+  }
+  .floating-astronaut{
+    height: 275px;
+    padding-right: 175px;
+    padding-bottom: 0px;
+  }
 }
