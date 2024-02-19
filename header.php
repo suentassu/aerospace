@@ -39,5 +39,5 @@
 
 
 
-<main>
-<div class="main-overlay">
+<main class="main-overlay">
+
