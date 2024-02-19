@@ -7,7 +7,7 @@
 get_header();
 ?>
     <div class="back-button">
-        <a href="here will be a link to an earlier page" title="here will be a link to an earlier page"> Here will be a link to an earlier page</a>
+        <a href="here will be a link to an earlier page" title="Back">Back</a>
     </div>
     <div class="courses-section-inner">
         <h1 style="text-align: center;"> Courses </h1>

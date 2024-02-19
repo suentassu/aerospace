@@ -103,7 +103,7 @@ main {
 button {
   background-color: var(--main-button);
   color: var(--dark-gray);
-  border: none;
+  border: none 0px;
   border-radius: 12px 0px;
   padding: 10px 20px;
   text-align: center;
@@ -119,3 +119,4 @@ button:hover {
   padding: 15px 25px;
   font-size: 25px;
 }
+
