@@ -14,50 +14,46 @@ COURSES PAGE
 
 /* Course choices */
 .courses-section-inner {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
   
 .courses-row{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-  
-.course{
-    padding: 20px 0px;
-    margin: 50px 10px;
-    height: 500px;
-    border: 2px #707070 solid;
-    text-align: center;
-    background: url("../img/stars-1.jpg") no-repeat center; /* EACH COURSE WILL HAVE THEIR OWN PICTURE THIS IS TEMPORARY */
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px;
+  position: relative;
 }
 
-.course-title {
-  padding: 15px;
+.course {
+  display: flex;
+  height: 35rem;
+  margin: 10px;
+  border: 2px var(--border) solid;
+  text-align: center;
+  background: var(--black);
+  overflow: hidden;
+}
+
+.title-bar img{
+  object-fit: cover;
+  width: 40rem;
+  filter: brightness(0.5);
 }
 
 .title-bar {
+  position: relative;
   width: 100%;
   background-color: #6d1824;
-  height: 50px;
-}
-
-.course-overlay{
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  height: 4rem;
+  text-align: center;
+  top: 2rem;
 }
 
 /* Floating Astronaut */
 .astronaut-div {
-  height: 75px;
+  height: 5rem;
 }
 
 @keyframes astronaut-floating {
@@ -92,11 +88,11 @@ COURSES PAGE
 
 @media screen and (min-width: 1500px) {
   .courses-row{
-    padding: 0px 300px;
+    padding: 0px 250px;
   }
   .floating-astronaut{
     height: 275px;
-    padding-right: 175px;
+    padding-right: 125px;
     padding-bottom: 0px;
   }
 }
