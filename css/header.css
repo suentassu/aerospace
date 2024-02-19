@@ -41,9 +41,7 @@ nav li {
 .icon-mobile {
   display: block;
 }
-.icon-tablet {
-  display: none;
-}
+.icon-tablet,
 .icon-desk {
   display: none;
 }

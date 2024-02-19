@@ -101,7 +101,15 @@ blockquote {
 main {
   display: flex;
   flex-direction: column;
-  padding: 2em 0;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin-top: auto;
+  background: no-repeat url("../img/red-space.jpg");
+}
+.main-overlay {
+  background-color: var(--background-overlay);
+  min-height: 100vh;
+  min-height: 100svh;
 }
 /* Buttons */
 button {
