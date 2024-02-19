@@ -47,6 +47,17 @@ nav li {
 .icon-desk {
   display: none;
 }
+.icon-mobile,
+.icon-tablet,
+.icon-desk {
+  cursor: pointer;
+}
+.icon-mobile:hover,
+.icon-tablet:hover,
+.icon-desk:hover {
+  color: var(--black);
+  transition: 0.5s ease;
+}
 .nav-overlay {
   height: 100%;
   width: 0;
