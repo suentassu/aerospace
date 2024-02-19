@@ -16,9 +16,11 @@ get_header();
         </div>
         <div class="courses-row">
             <div class="course">
-                <div class="title-bar">
-                    <p class="course-title">Course name</p>
-                </div>  
+                <div class="course-overlay">     
+                    <div class="title-bar">
+                        <p class="course-title">Course name</p>
+                    </div>
+                </div>
             </div>
             <div class="course">
                 <div class="title-bar">
