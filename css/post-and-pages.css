@@ -4,7 +4,7 @@ CSS for Post and Pages
 /* Universal codes */
 .content-container {
   width: 90%;
-  margin: 2% auto;
+  margin: 20px auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -20,12 +20,9 @@ CSS for Post and Pages
 
 /* ABOUT PAGE */
 /* Floating Moon */
-.moon-container {
-  margin-left: 3rem;
-}
 @keyframes floating-moon {
   50% {
-    transform: rotate(5deg) translateX(-25px) translateY(-90px);
+    transform: rotate(8deg) translateX(15px) translateY(-90px);
   }
 }
 .floating-moon {
@@ -34,16 +31,20 @@ CSS for Post and Pages
   left: 25%;
   position: relative;
   z-index: 1;
-  animation: floating-moon 20s cubic-bezier(0.36, 0.23, 0.02, 0.21) infinite;
+  animation: floating-moon 50s cubic-bezier(0.21, 0.12, 0.12, 0.21) infinite;
 }
 
-@media screen and (min-width: 1500px) {
+/* Responsive */
+@media screen and (min-width: 1100px) {
   .moon-container {
-    /* position: fixed; -- Will that moon be fixed on pc screen? */
-    top: 50%;
+    /* Is Moon going to be fixed or not, need to ask. */
+    /* position: fixed; */
+    bottom: 50%;
+    height: 250px;
   }
   .floating-moon {
     left: 0%;
+    height: 250px;
   }
 }
 

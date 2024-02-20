@@ -15,3 +15,4 @@ function openNaviDesk() {
 function closeNav() {
   document.getElementById("aeroNav").style.width = "0%";
 }
+

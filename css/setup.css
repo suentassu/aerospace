@@ -90,7 +90,7 @@ ul {
   list-style-type: none;
 }
 ol {
-  margin-left: 1em;
+  margin-left: 2em;
 }
 blockquote {
   padding: 1.5em;
@@ -114,7 +114,10 @@ main {
 /* Buttons */
 /* Back button */
 .back-button {
-  margin: 20px;
+  position: sticky;
+  z-index: 999;
+  transition: 1s;
+  top: 15%;
 }
 
 button {
