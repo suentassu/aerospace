@@ -28,12 +28,25 @@ COURSES PAGE
 
 .course {
   display: flex;
+  flex-wrap: wrap;
   height: 35rem;
   margin: 10px;
   border: 2px var(--border) solid;
   text-align: center;
   background: var(--black);
   overflow: hidden;
+}
+
+.course-overlay{
+  display: flexbox;
+  background-color: var(--pic-overlay);
+  width: 100%;
+  height: 100%;
+}
+
+.course-img{
+  width: 100%;
+  height: 100%;
 }
 
 .title-bar img{
@@ -49,6 +62,40 @@ COURSES PAGE
   height: 4rem;
   text-align: center;
   top: 2rem;
+}
+
+/* Testing stuff */
+
+.testi-container{
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border: 1px var(--border) solid;
+  text-align: center;
+}
+
+.testi-img img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.testi-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--pic-overlay);
+}
+
+.testi-name{
+  position: relative;
+  top: 40px;
+  padding: 10px 0px;
+  background-color: var(--main-red);
 }
 
 /* Floating Astronaut */
