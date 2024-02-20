@@ -1,17 +1,21 @@
 <?php
 /**
- * Template Name: Course Page
+ * Template Name: About page
  * 
- * @package AeroSpace
  */
+
 get_header();
 ?>
 
-<div class="back-button">
-        <a href="here will be a link to an earlier page" title="Back">Back</a>
-    </div>
-    
+<div class="content-container">
+        <h1 class="first-title"><?php echo get_the_title(); ?></h1>
+                <?php
+                        the_content();
+                ?>
+</div>
 
-<?php
-get_footer();
-?>
+<div class="moon-container">
+        <img class="floating-moon" src="../wp-content/themes/aerospace/img/moon.png" alt="astornaut">
+</div>
+
+<?php get_footer(); ?>
