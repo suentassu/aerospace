@@ -12,6 +12,7 @@ General CSS
 
   --main-text: #ffffff;
   --links: #c4c4c4;
+  --black: #000000;
 
   --main-button: #ffffffc4;
   --hover-button: #fff;
@@ -59,7 +60,7 @@ a {
   transition: 0.5s ease;
 }
 a:hover {
-  color: var(--dark-gray);
+  color: var(--black);
   transition: 0.5s ease;
 }
 a:visited {
@@ -93,9 +94,15 @@ blockquote {
 }
 
 main {
-  margin: 1.2em;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+  margin-top: auto;
+  background: no-repeat url("../img/red-space.jpg");
+}
+.main-overlay {
+  background-color: var(--background-overlay);
   min-height: 100vh;
   min-height: 100svh;
 }

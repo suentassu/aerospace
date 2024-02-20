@@ -1,3 +1,4 @@
+</div>
 </main>
 <div class="red-line"></div>
 <footer>
