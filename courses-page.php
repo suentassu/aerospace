@@ -6,9 +6,6 @@
  */
 get_header();
 ?>
-    <div class="back-button">
-        <a href="here will be a link to an earlier page" title="Back">Back</a>
-    </div>
     <div class="courses-section-inner">
         <h1 style="text-align: center;"> Courses </h1>
         <div class="astronaut-div">
@@ -20,7 +17,7 @@ get_header();
                 <img class="course-image" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>   
                 <div class="course-overlay">
                     <div class="course-title">
-                            <p class="course-name">Course Name</p>
+                        <p class="course-name"><a href="#">Course Name</a></p>
                     </div>
                 </div>
             </div>
@@ -28,7 +25,7 @@ get_header();
                 <img class="course-image" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>   
                 <div class="course-overlay">
                     <div class="course-title">
-                            <p class="course-name">Course Name</p>
+                            <p class="course-name"><a href="#">Course Name</a></p>
                     </div>
                 </div>
             </div>
@@ -36,7 +33,7 @@ get_header();
                 <img class="course-image" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>   
                 <div class="course-overlay">
                     <div class="course-title">
-                            <p class="course-name">Course Name</p>
+                            <p class="course-name"><a href="#">Course Name</a></p>
                     </div>
                 </div>
             </div>
