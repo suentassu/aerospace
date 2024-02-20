@@ -21,66 +21,30 @@ COURSES PAGE
   
 .courses-row{
   display: flex;
+  align-items: center;
   flex-direction: column;
-  padding: 0px 10px;
+  padding: 10px;
   position: relative;
+  justify-content: space-evenly;
 }
 
-.course {
-  display: flex;
-  flex-wrap: wrap;
-  height: 35rem;
+.course-container{
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: 30rem;
   margin: 10px;
-  border: 2px var(--border) solid;
-  text-align: center;
-  background: var(--black);
-  overflow: hidden;
-}
-
-.course-overlay{
-  display: flexbox;
-  background-color: var(--pic-overlay);
-  width: 100%;
-  height: 100%;
-}
-
-.course-img{
-  width: 100%;
-  height: 100%;
-}
-
-.title-bar img{
-  object-fit: cover;
-  width: 40rem;
-  filter: brightness(0.5);
-}
-
-.title-bar {
-  position: relative;
-  width: 100%;
-  background-color: #6d1824;
-  height: 4rem;
-  text-align: center;
-  top: 2rem;
-}
-
-/* Testing stuff */
-
-.testi-container{
-  position: relative;
-  width: 100%;
-  max-width: 400px;
   border: 1px var(--border) solid;
   text-align: center;
 }
 
-.testi-img img{
-  display: block;
+.course-image{
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
-.testi-overlay{
+.course-overlay{
   position: absolute;
   top: 0;
   bottom: 0;
@@ -91,10 +55,10 @@ COURSES PAGE
   background-color: var(--pic-overlay);
 }
 
-.testi-name{
+.course-name{
   position: relative;
   top: 40px;
-  padding: 10px 0px;
+  padding: 20px 0px;
   background-color: var(--main-red);
 }
 
@@ -109,6 +73,7 @@ COURSES PAGE
 
 .floating-astronaut{
   height: 175px;
+  padding-right: 50px;
   float: right;
   position: relative;
   z-index: 1;
@@ -123,12 +88,14 @@ COURSES PAGE
 @media screen and (min-width: 900px) {
   .courses-row{
     flex-direction: row;
+    align-items: center;
   }
   .course{
     flex: 0%;
   }
   .floating-astronaut {
-    height: 230px;
+    height: 250px;
+    padding-right: 50px;
     padding-bottom: 50px;
   }
 }
@@ -136,10 +103,11 @@ COURSES PAGE
 @media screen and (min-width: 1500px) {
   .courses-row{
     padding: 0px 250px;
+    align-items: center;
   }
   .floating-astronaut{
     height: 275px;
-    padding-right: 125px;
+    padding-right: 150px;
     padding-bottom: 0px;
   }
 }
