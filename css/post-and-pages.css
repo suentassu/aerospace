@@ -141,3 +141,46 @@ COURSES PAGE
 
 /* Archive.php, page.php, index.php, Single.php, search.php
 * Extra posts and pages that are needed for wordpress  */
+
+/* Index.php */
+.post-section {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.post-title {
+  margin-bottom: 1em;
+}
+.post-container {
+  margin-bottom: 25px;
+}
+.post-info-image img {
+  width: 100%;
+  height: auto;
+  box-shadow: var(--main-box-shadow);
+}
+/* Index.php responsiveness */
+@media screen and (min-width: 900px) {
+  .post-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .post-info-image {
+    width: 50%;
+  }
+  .post-info-text {
+    margin-left: 15px;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .post-section {
+    max-width: 60%;
+  }
+  .post-info-image {
+    width: 30%;
+  }
+}
