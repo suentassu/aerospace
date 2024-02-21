@@ -25,6 +25,7 @@ Style.css is for importing other css-files to it.
 # Components
 --------------------------------------------------------------*/
 @import "css/menus.css";
+@import "css/front-page.css";
 @import "css/header.css";
 @import "css/footer.css";
 @import "css/post-and-pages.css";
