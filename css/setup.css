@@ -46,12 +46,13 @@ General CSS
 
 /* Main styles */
 body {
-  background: rgb(110, 94, 94);
+  background-image: url("../img/red-space.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--main-text);
   font-family: var(--main-font);
   font-size: 1.2em;
   letter-spacing: 0.1em;
-  font-weight: 300;
   overflow-x: hidden;
 }
 /* Links */
@@ -79,11 +80,17 @@ h5 {
   font-weight: 500;
   letter-spacing: 0.1em;
 }
+.first-title {
+  text-align: center;
+}
 p {
   margin: 1em 0;
 }
 ul {
   list-style-type: none;
+}
+ol {
+  margin-left: 2em;
 }
 blockquote {
   padding: 1.5em;
@@ -98,21 +105,26 @@ main {
   flex-direction: column;
   min-height: 100vh;
   min-height: 100svh;
-  margin-top: auto;
-  background: no-repeat url("../img/red-space.jpg");
 }
 .main-overlay {
   background-color: var(--background-overlay);
   min-height: 100vh;
   min-height: 100svh;
 }
-
 /* Buttons */
+/* Back button */
+.back-button {
+  position: sticky;
+  z-index: 999;
+  transition: 1s;
+  top: 15%;
+}
+
 button {
   background-color: var(--main-button);
   color: var(--dark-gray);
-  border: none 0px;
-  border-radius: 12px 0px;
+  border: none 0;
+  border-radius: 12px 0;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -127,4 +139,3 @@ button:hover {
   padding: 15px 25px;
   font-size: 25px;
 }
-
