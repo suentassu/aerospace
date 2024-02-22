@@ -9,35 +9,40 @@
 </head>
 <body>
 
-<nav id="navbar">
-    <div class="nav-container">
-        <div class="main-title">
-            <a href="<?php echo get_home_url(); ?>"><?php bloginfo(); ?></a>
+    
+<header>
+    <nav id="navbar">
+        
+        <div class="nav-container">
+            <div class="main-title">
+                <a href="<?php echo get_home_url(); ?>"><?php bloginfo(); ?></a>
+            </div>
+            <div class="nav-icon">
+                <span class="icon-mobile" onclick="openNavi()"><i class="fa-solid fa-bars"></i></span>
+
+                <span class="icon-tablet" onclick="openNaviTablet()"><i class="fa-solid fa-bars"></i></span>
+                
+                <span class="icon-desk" onclick="openNaviDesk()"><i class="fa-solid fa-bars"></i></span>
+            </div>
         </div>
-        <div class="nav-icon">
-            <span class="icon-mobile" onclick="openNavi()"><i class="fa-solid fa-bars"></i></span>
 
-            <span class="icon-tablet" onclick="openNaviTablet()"><i class="fa-solid fa-bars"></i></span>
-            
-            <span class="icon-desk" onclick="openNaviDesk()"><i class="fa-solid fa-bars"></i></span>
+        <div id="aeroNav" class="nav-overlay">
+                <a href="javascript:void(0)" class="nav-closebtn" onclick="closeNav()">
+                    <i class="fa-solid fa-x"></i>
+                </a>
+                
+            <div class="nav-overlay-content">
+                <?php
+                    wp_nav_menu();
+                ?>
+            </div>
         </div>
 
+    </nav>
+</header>
 
+<main class="main-overlay">
+
+    <div class="back-button nav-container ">
+        <a href="#" title="Back"><i class="fa-solid fa-circle-chevron-left"></i> Go back</a>
     </div>
-    <div id="aeroNav" class="nav-overlay">
-            <a href="javascript:void(0)" class="nav-closebtn" onclick="closeNav()">
-                <i class="fa-solid fa-x"></i>
-            </a>
-            
-        <div class="nav-overlay-content">
-            <?php
-                wp_nav_menu();
-            ?>
-        </div>
-    </div>
-</nav>
-
-
-
-<main>
-

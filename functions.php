@@ -33,7 +33,7 @@ function aerospace_setup()
     // Post Thumpnails
     add_theme_support( 'post-thumbnails' );
 
-    // This theme uses wp_nav_menu() in three location.
+    // This theme uses wp_nav_menu().
     register_nav_menus( array(
     'primary'   => __( 'Primary Menu', 'aerospace' ),
     'secondary' => __( 'Secondary Menu', 'aerospace' ),

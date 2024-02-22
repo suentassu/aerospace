@@ -1,4 +1,7 @@
+
 </main>
+
+
 <div class="red-line"></div>
 <footer>
     <div class="footer-overlay">
