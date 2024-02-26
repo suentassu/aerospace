@@ -184,3 +184,20 @@ COURSES PAGE
     width: 30%;
   }
 }
+
+/* Single.php */
+.posted-category {
+  padding: 0.5em;
+  margin: 20px 0;
+  border-left: 5px solid var(--main-red);
+  color: var(--main-text);
+  background-color: var(--nav);
+}
+span.date-time-post {
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+}
+.single-content {
+  padding: 20px 0;
+}

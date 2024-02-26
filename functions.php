@@ -58,3 +58,4 @@ function custom_widgets() {
 
 }
 add_action( 'widgets_init', 'custom_widgets' );
+

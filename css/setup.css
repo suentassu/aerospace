@@ -46,7 +46,7 @@ General CSS
 
 /* Main styles */
 body {
-  background-image: url("../img/red-space.jpg");
+  /* background-image: url("../img/red-space.jpg"); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--main-text);
