@@ -61,34 +61,53 @@ COURSES PAGE
 
 .courses-row {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  padding: 0px 10px;
+  padding: 10px;
   position: relative;
+  justify-content: space-evenly;
 }
 
-.course {
-  display: flex;
-  height: 35rem;
+.course-container {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: 30rem;
   margin: 10px;
   border: 1px var(--border) solid;
   text-align: center;
-  background: var(--black);
-  overflow: hidden;
 }
 
-.title-bar img {
+.course-image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  width: 40rem;
-  filter: brightness(0.5);
 }
 
-.title-bar {
+.course-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--pic-overlay);
+}
+
+.course-name {
   position: relative;
   width: 100%;
-  background-color: #6d1824;
-  height: 4rem;
-  text-align: center;
-  top: 2rem;
+  top: 40px;
+  padding: 20px 0px;
+  background-color: var(--main-red);
+}
+
+.course-name:hover {
+  padding: 30px 0px;
+  font-size: 1.5rem;
+  top: 30px;
+  transition-duration: 250ms;
 }
 
 /* Floating Astronaut */
@@ -104,6 +123,7 @@ COURSES PAGE
 
 .floating-astronaut {
   height: 175px;
+  padding-right: 40px;
   float: right;
   position: relative;
   z-index: 1;
@@ -112,18 +132,19 @@ COURSES PAGE
 }
 
 /* Course */
-
 /* Responsiveness */
 
 @media screen and (min-width: 900px) {
   .courses-row {
     flex-direction: row;
+    align-items: center;
   }
   .course {
     flex: 0%;
   }
   .floating-astronaut {
-    height: 230px;
+    height: 250px;
+    padding-right: 50px;
     padding-bottom: 50px;
   }
 }
@@ -131,10 +152,11 @@ COURSES PAGE
 @media screen and (min-width: 1500px) {
   .courses-row {
     padding: 0px 250px;
+    align-items: center;
   }
   .floating-astronaut {
     height: 275px;
-    padding-right: 125px;
+    padding-right: 150px;
     padding-bottom: 0px;
   }
 }
