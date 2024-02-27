@@ -46,7 +46,7 @@ General CSS
 
 /* Main styles */
 body {
-  /* background-image: url("../img/red-space.jpg"); */
+  background-image: url("../img/red-space.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--main-text);
@@ -54,6 +54,8 @@ body {
   font-size: 1.2em;
   letter-spacing: 0.1em;
   overflow-x: hidden;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
 }
 /* Links */
 a {
@@ -61,12 +63,12 @@ a {
   transition: 0.5s ease;
 }
 a:hover {
-  color: var(--black);
+  color: var(--main-red);
   transition: 0.5s ease;
 }
-a:visited {
-  color: var(--);
-}
+/* a:visited {
+  color: var(--main-red);
+} */
 
 /* Headers, p */
 h1,

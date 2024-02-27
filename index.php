@@ -5,7 +5,11 @@ get_header();
 
 
 
-<section class="post-section">
+<div class="post-section">
+    <div class="post-title">
+        
+        <h1 class="first-title"><?php echo the_archive_title(); ?></h1>
+    </div>
      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="post-container">
             <div class="post-info-image">
@@ -20,14 +24,26 @@ get_header();
             </div>
             
             <div class="post-info-text">
-                <h3><a class="normal-link-text" href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
+                <h3 class="first-title"><a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a></h3>
+                
+                <span class="date-time">
+            <?php the_time('F jS, Y'); ?> by&nbsp;<?php  the_author_posts_link(); ?>
+            </span>
                 <?php echo get_the_excerpt(); ?>
             </div>
+
+
+
         </div>
     <?php endwhile; else : ?>
 	    <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
     <?php endif; ?>
-</section>
+
+<?php numeric_posts_nav(); ?>
+
+</div>
+
+
 
 
 <?php

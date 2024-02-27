@@ -183,6 +183,46 @@ COURSES PAGE
   height: auto;
   box-shadow: var(--main-box-shadow);
 }
+span.date-time {
+  padding-bottom: 10px;
+}
+/* Numeric pagination (in archive etc pages show page number at the end of the page) */
+span.page-numbers {
+  margin: 10px;
+}
+.numeric-navigation {
+  display: flex;
+  justify-content: center;
+}
+.numeric-navigation ul {
+  display: flex;
+  align-items: center;
+}
+.numeric-navigation li a,
+.numeric-navigation li a:hover,
+.numeric-navigation li.active a,
+.numeric-navigation li.disabled {
+  color: var(--main-text);
+  text-decoration: none;
+}
+
+.numeric-navigation li {
+  display: inline;
+}
+.numeric-navigation li a,
+.numeric-navigation li a:hover,
+.numeric-navigation li.active a,
+.numeric-navigation li.disabled {
+  cursor: pointer;
+  padding: 12px;
+  padding: 0.75rem;
+  margin: 5px;
+}
+.numeric-navigation li a:hover,
+.numeric-navigation li.active a {
+  background-color: var(--main-red);
+}
+
 /* Index.php responsiveness */
 @media screen and (min-width: 900px) {
   .post-container {
@@ -215,7 +255,8 @@ COURSES PAGE
   color: var(--main-text);
   background-color: var(--nav);
 }
-span.date-time-post {
+span.date-time-post,
+span.date-time {
   font-style: italic;
   display: flex;
   justify-content: center;

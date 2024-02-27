@@ -6,7 +6,7 @@
   
             <h1 class="first-title"><?php echo get_the_title(); ?></h1>
             <span class="date-time-post">
-            <?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?>
+            <?php the_time('F jS, Y'); ?> by&nbsp;<?php  the_author_posts_link(); ?>
             </span>
             <div class="single-content">
                 <?php the_content(); ?>
@@ -16,7 +16,7 @@
             <p class="postmetadata"><?php _e( 'Categories:' ); ?> <?php the_category( ', ' ); ?></p>
             <p><?php the_tags( 'Tags: ',', ' ); ?></p>
         </div>
-
+    
         <?php comments_template(); ?> 
 
  </div>
