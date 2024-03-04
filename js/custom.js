@@ -16,3 +16,14 @@ function closeNav() {
   document.getElementById("aeroNav").style.width = "0%";
 }
 
+/* Course page content list + content viewer */
+function toggleContent(id) {
+  var elements = document.querySelectorAll('.content'); 
+  for (var i = 0; i < elements.length; i++) {
+    if (elements[i].id === id) {
+      elements[i].style.display = 'block';
+    } else {
+      elements[i].style.display = 'none';
+    }
+  }
+}
