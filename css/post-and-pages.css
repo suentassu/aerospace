@@ -264,3 +264,116 @@ span.date-time {
 .single-content {
   padding: 20px 0;
 }
+
+/* Comments.php */
+.comments-area {
+  margin: 0 auto;
+}
+.side-by-side {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+.who-says {
+  margin: 0 5px 0 10px;
+}
+.comment-date {
+  font-style: italic;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.rounded-avatar {
+  border-radius: 50%;
+  box-shadow: var(--main-box-shadow);
+}
+.comments-section {
+  margin: auto;
+  padding: 10px;
+}
+.reply-header {
+  margin-top: 10px;
+}
+.comment-full {
+  width: 100%;
+  margin: 5px 0;
+}
+.comment-height {
+  height: 25px;
+}
+.post-comment,
+#submit {
+  background-color: var(--main-red);
+  border: none;
+  color: var(--main-text);
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: var(--header-font);
+  text-shadow: var(--main-text-shadow);
+  text-transform: uppercase;
+  box-shadow: var(--main-box-shadow);
+  transition: 0.5s ease;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+}
+.post-comment {
+  font-size: 13px;
+}
+.post-comment:hover,
+#submit:hover {
+  background: var(--dark-gray);
+  transition: 0.5s ease;
+  color: var(--main-text);
+}
+.post-comment:active,
+#submit:active {
+  position: relative;
+  top: 1px;
+}
+.li-style {
+  border-bottom: 1px solid var(--main-red);
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+#respond {
+  padding: 15px 10px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Highlight active form field */
+#respond input[type="text"],
+textarea {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid var(--main-red);
+}
+
+#respond input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  box-shadow: 0 0 10px rgba(109, 24, 36, 1);
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(109, 24, 36, 1);
+}
+
+/* Comments.php responsiveness */
+@media screen and (min-width: 700px) {
+  .comments-section {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 890px) {
+  .comments-section {
+    width: 60%;
+  }
+}

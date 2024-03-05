@@ -128,3 +128,19 @@ function numeric_posts_nav() {
     echo '</ul></div>' . "\n";
   
 }
+
+// Comments field in blog posts, moving textfield to bottom
+function aerospace_comment_to_bottom( $fields ) {
+$comment_field = $fields['comment'];
+unset( $fields['comment'] );
+$fields['comment'] = $comment_field;
+return $fields;
+}
+add_filter( 'comment_form_fields', 'aerospace_comment_to_bottom');
+
+// Comments template remove URL-field. 
+function aerospace_remove_url($arg) {
+    $arg['url'] = '';
+    return $arg;
+}
+add_filter('comment_form_default_fields', 'aerospace_remove_url');

@@ -11,6 +11,7 @@ get_header();
         <div class="astronaut-div">
             <img class="floating-astronaut" src="../wp-content/themes/aerospace/img/astronaut-flipped.png" alt="astornaut">
         </div>
+        
         <!-- EACH COURSE WILL HAVE THEIR OWN IMAGES -->
         <div class="courses-row">
             <div class="course-container">
