@@ -229,6 +229,11 @@ div.course-description{
   margin-bottom: 20px;
 }
 
+.other-courses-container {
+  display: flex;
+  place-items: center;
+}
+
 .other-courses-title{
   background: var(--main-red);
   padding: 20px 10px;
@@ -236,9 +241,48 @@ div.course-description{
   font-size: 1.5rem;
 }
 
-.course-slide{
+.other-courses-slider {
+  display: grid;
+  height: 400px;
+  width: 55vw;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+#course-slider-list {
+  display: flex;
   width: 100%;
-  height: auto;
+  height: 100%;
+  transition: all .5s;
+}
+
+.btn{
+  position: relative;
+  top: calc(50% - 30px);
+  cursor: pointer;
+}
+
+.btn.inactive {
+  border: 1px solid var(--border);
+}
+
+.btn:first-of-type {
+  left: 10px;
+}
+
+.btn:last-of-type {
+  right: 10px;
+}
+
+.course-slide {
+  height: 90%;
+  width: 20rem;
+  margin: auto 10px;
+  background-color: var(--border);
+  display: grid;
+  place-items: center;
 }
 
 /* Responsiveness */
