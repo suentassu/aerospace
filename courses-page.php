@@ -6,35 +6,42 @@
  */
 get_header();
 ?>
+<div class="content-container">
+        <h1 class="first-title"><?php echo get_the_title(); ?></h1>
+                <?php
+                        the_content();
+                ?>
+</div>
+
     <div class="courses-section-inner">
-        <h1 style="text-align: center;"> Courses </h1>
+
         <div class="astronaut-div">
-            <img class="floating-astronaut" src="../wp-content/themes/aerospace/img/astronaut-flipped.png" alt="astornaut">
+            <img class="floating-astronaut" src="<?php the_field('floating_img'); ?>" alt="astornaut">
         </div>
         
-        <!-- EACH COURSE WILL HAVE THEIR OWN IMAGES -->
+        <!-- COURSES-SECTION -->
         <div class="courses-row">
             <div class="course-container">
-                <img class="course-image" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>   
+                <img class="course-image" src="<?php the_field('course_one_img'); ?>"/>   
                 <div class="course-overlay">
                     <div class="course-title">
-                        <p class="course-name"><a href="#">Course Name</a></p>
+                        <p class="course-name"><a href="<?php the_field('course_one_url'); ?>"><?php the_field('course_one_name'); ?></a></p>
                     </div>
                 </div>
             </div>
             <div class="course-container">
-                <img class="course-image" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>   
+                <img class="course-image" src="<?php the_field('course_two_img'); ?>"/>   
                 <div class="course-overlay">
                     <div class="course-title">
-                            <p class="course-name"><a href="#">Course Name</a></p>
+                            <p class="course-name"><a href="<?php the_field('course_two_url'); ?>"><?php the_field('course_two_name'); ?></a></p>
                     </div>
                 </div>
             </div>
             <div class="course-container">
-                <img class="course-image" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>   
+                <img class="course-image" src="<?php the_field('course_three_img'); ?>"/>   
                 <div class="course-overlay">
                     <div class="course-title">
-                            <p class="course-name"><a href="#">Course Name</a></p>
+                            <p class="course-name"><a href="<?php the_field('course_three_url'); ?>"><?php the_field('course_three_name'); ?></a></p>
                     </div>
                 </div>
             </div>
