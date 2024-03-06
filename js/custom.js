@@ -30,7 +30,7 @@ function toggleContent(id) {
 
 // Course page other courses
 var other_container = document.getElementById('other-courses-container');
-var course_slider = document.getElementById('other-courses-slider');
+var course_slider = document.getElementById('course-slider-list');
 var course_slides = document.getElementsByClassName('course-slide').length;
 var navigation = document.getElementsByClassName('btn');
 
@@ -50,10 +50,10 @@ function checkWidth() {
 }
 
 function setParams(w) {
-  if (w < 901) {
+  if (w < 701) {
     slidesPerPage = 1;
   } else {
-    if (w < 1301) {
+    if (w < 950) {
       slidesPerPage = 2;
     } else {
       slidesPerPage = 3;
@@ -63,9 +63,9 @@ function setParams(w) {
   if (currentPosition > slidesCount) {
     currentPosition -= slidesPerPage;
   }
-  currentMargin = -currentPosition * (100 / slidesPerPage);
+  currentMargin = - currentPosition * (100 / slidesPerPage);
   course_slider.style.marginLeft = currentMargin + '%';
-  if (currentPosition === 0) {
+  if (currentPosition > 0) {
     navigation[0].classList.add('inactive');
   }
   if (currentPosition < slidesCount) {
@@ -76,7 +76,7 @@ function setParams(w) {
   }
 }
 
-setParams();
+setParams(containerWidth);
 console.log(slidesPerPage);
 console.log(currentPosition);
 
@@ -95,7 +95,7 @@ function slideRight() {
 }
 
 function slideLeft() {
-  if (currentPosition != 0) {
+  if (currentPosition < slidesCount) {
     course_slider.style.marginLeft = currentMargin - (100 / slidesPerPage) + '%';
     currentMargin -= (100 / slidesPerPage);
     currentPosition++;

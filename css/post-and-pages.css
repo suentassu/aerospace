@@ -230,7 +230,7 @@ div.course-description{
 }
 
 .other-courses-container {
-  display: flex;
+  display: grid;
   place-items: center;
 }
 
@@ -242,47 +242,53 @@ div.course-description{
 }
 
 .other-courses-slider {
-  display: grid;
   height: 400px;
-  width: 55vw;
-  max-width: 100%;
+  width: 15rem;
+  max-width: 1400px;
   position: relative;
   overflow: hidden;
-  padding: 20px;
-}
-
-#course-slider-list {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition: all .5s;
 }
 
 .btn{
-  position: relative;
+  position: absolute;
+  display: flex;
+  height: 25px;
+  width: 25px;
+  background-color: var(--main-button);
   top: calc(50% - 30px);
   cursor: pointer;
+  align-content: center;
+}
+.btn:first-of-type {
+	left: 0px
+}
+.btn:last-of-type {
+	right: 0px
 }
 
 .btn.inactive {
   border: 1px solid var(--border);
 }
 
-.btn:first-of-type {
-  left: 10px;
+#arrow{
+  margin: auto;
 }
 
-.btn:last-of-type {
-  right: 10px;
+#course-slider-list {
+  display: flex;
+  height: 100%;
+  width: 900%;
+  transition: all .5s;
 }
 
-.course-slide {
+#course-slide {
   height: 90%;
-  width: 20rem;
-  margin: auto 10px;
+  width: 12.5rem;
+  margin: auto 20px;
   background-color: var(--border);
-  display: grid;
+  display: flex;
   place-items: center;
+  justify-content: center;
 }
 
 /* Responsiveness */
@@ -335,17 +341,34 @@ div.course-description{
     width: 40%;
     margin: auto;
   }
-  
-  .course-content-list {
-    width: 70%;
-    height: 35rem;
-    margin: auto;
+
+  .btn:first-of-type {
+    left: 0px
+  }
+
+  .btn:last-of-type {
+    right: 0px
   }
 }
 
 @media screen and (min-width: 1000px) {
   .course-difficulty-bar{
     width: 550px;
+  }
+}
+
+
+@media screen and (min-width: 1300px) {
+  .other-courses-slider{
+    width: 45rem;
+  }
+
+  #course-slider-list{
+    width: 300%;
+  }
+
+  #course-slide{
+    width: 20rem;
   }
 }
 
@@ -395,6 +418,14 @@ div.course-description{
   .other-courses-title{
     width: 40%;
     margin: auto;
+  }
+
+  .other-courses-slider{
+    width: 68rem;
+  }
+
+  #course-slide{
+    width: 20rem;
   }
 
   .pdf-wrapper {
