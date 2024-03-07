@@ -98,25 +98,62 @@ get_header();
                                         <svg id="arrow" viewBox="0 0 512 512" width="20" title="chevron-circle-left">
                                                 <path d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z" />
                                         </svg>
-                                        </span>
+                                </span>
                                 <div class="course-slider-list" id="course-slider-list">
                                         <div class="course-slide" id="course-slide">
-                                                <p class="course-title">Course Name 1</p>
+                                                <div class="course-thumbnail">
+                                                        <img id="course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                </div>
+                                                <div class="other-course-info">
+                                                        <p class="other-course-title">Course Name 1</p>
+                                                        <p class="other-course-difficulty" id="difficulty-0">Difficulty</p>      
+                                                </div>
                                         </div>
                                         <div class="course-slide" id="course-slide">
-                                                <p class="course-title">Course Name 2</p>
+                                                <div class="course-thumbnail">
+                                                        <img id="course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                </div>
+                                                <div class="other-course-info">
+                                                        <p class="other-course-title">Course Name 2</p>
+                                                        <p class="other-course-difficulty" id="difficulty-50">Difficulty</p>      
+                                                </div>
+                                                
                                         </div>
                                         <div class="course-slide" id="course-slide">
-                                                <p class="course-title">Course Name 3</p>
+                                                <div class="course-thumbnail">
+                                                        <img id="course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                </div>
+                                                <div class="other-course-info">
+                                                        <p class="other-course-title">Course Name 3</p>
+                                                        <p class="other-course-difficulty" id="difficulty-25">Difficulty</p>      
+                                                </div>
                                         </div>
                                         <div class="course-slide" id="course-slide">
-                                                <p class="course-title">Course Name 4</p>
+                                                <div class="course-thumbnail">
+                                                        <img id="course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                </div>
+                                                <div class="other-course-info">
+                                                        <p class="other-course-title">Course Name 4</p>
+                                                        <p class="other-course-difficulty" id="difficulty-100">Difficulty</p>      
+                                                </div>
                                         </div>
                                         <div class="course-slide" id="course-slide">
-                                                <p class="course-title">Course Name 5</p>
+                                                <div class="course-thumbnail">
+                                                        <img id="course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                </div>
+                                                <div class="other-course-info">
+                                                        <p class="other-course-title">Course Name 5</p>
+                                                        <p class="other-course-difficulty" id="difficulty-75">Difficulty</p>      
+                                                </div>
                                         </div>
                                         <div class="course-slide" id="course-slide">
-                                                <p class="course-title">Course Name 6</p>
+                                                <div class="course-thumbnail">
+                                                        <img id="course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                </div>
+                                                <div class="other-course-info">
+                                                        <p class="other-course-title">Course Name 6</p>
+                                                        <p class="other-course-difficulty" id="difficulty-50">Difficulty</p>      
+                                                </div>
                                         </div>
                                 </div> 
                                 <span onclick="slideLeft()" id="next-btn" class="next btn">
