@@ -6,7 +6,7 @@
     // Theme version number
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.0' );
+	define( '_S_VERSION', '1.1.0' );
 }
 
     // Enqueue scripts and styles.
@@ -36,8 +36,7 @@ function aerospace_setup()
     // This theme uses wp_nav_menu().
     register_nav_menus( array(
     'primary'   => __( 'Primary Menu', 'aerospace' ),
-    'secondary' => __( 'Secondary Menu', 'aerospace' ),
-    'courses'   => __( 'Courses Menu', 'aerospace' )
+    'secondary' => __( 'Secondary Menu', 'aerospace' )
     ) );
 
 }
