@@ -47,13 +47,6 @@
         <a href="#" title="Back"><i class="fa-solid fa-circle-chevron-left"></i> Go back</a>
     </div>
 
-    <!-- linking css -->
-    <head>
-        <title>Popup Contact Form</title>
-        <link rel="stylesheet" type="text/css" src="../pop-up.css">
-
-    </head>
-
     <!-- Button to open the popup -->
     <button id="openButton" onclick="togglePopup()">Contact Us</button>
 
@@ -76,22 +69,5 @@
             <input type="submit" value="Submit">
         </form>
     </div>
-
-    <script>
-        // Function to toggle the popup
-        function togglePopup() {
-            var popup = document.getElementById("contactForm");
-            if (popup.style.display === "block") {
-                popup.style.display = "none"; // Hide the popup if it's already open
-            } else {
-                popup.style.display = "block"; // Show the popup if it's closed
-            }
-        }
-
-        // Function to close the popup
-        function closePopup() {
-            document.getElementById("contactForm").style.display = "none";
-        }
-    </script>
-
+    
 </body>
