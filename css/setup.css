@@ -82,6 +82,7 @@ h5 {
   font-weight: 500;
   letter-spacing: 0.1em;
 }
+/* First H1 on the page */
 .first-title {
   text-align: center;
 }
@@ -101,7 +102,6 @@ blockquote {
   color: var(--main-text);
   font-style: italic;
 }
-
 main {
   display: flex;
   flex-direction: column;
