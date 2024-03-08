@@ -151,7 +151,7 @@ COURSES PAGE
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 470px;
+  width: 100%;
 }
 
 .bar {
@@ -229,11 +229,6 @@ div.course-description{
   margin-bottom: 20px;
 }
 
-.other-courses-container {
-  display: grid;
-  place-items: center;
-}
-
 .other-courses-title{
   background: var(--main-red);
   padding: 20px 10px;
@@ -241,61 +236,41 @@ div.course-description{
   font-size: 1.5rem;
 }
 
-.other-courses-slider {
-  height: 250px;
-  width: 25rem;
-  max-width: 1400px;
+#carousel {
+  margin: 10px 0;
+}
+
+.course-thumbnail{
+  width: 95%;
+  height: 80%;
+  margin: auto;
+  padding-top: 10px;
   position: relative;
   overflow: hidden;
 }
 
-/*:not(.btn){
-  overflow: hidden;
-}*/
-
-.btn{
-  position: absolute;
-  display: flex;
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  background-color: var(--main-button);
-  top: calc(50% - 30px);
-  cursor: pointer;
-  align-content: center;
-}
-.btn:first-of-type {
-	left: -10px;
-  z-index: 1;
-}
-.btn:last-of-type {
-	right: 0px;
-}
-
-.btn.inactive {
-  border: 1px solid var(--border);
-}
-
-#arrow{
-  margin: auto;
-}
-
-#course-slider-list {
-  display: flex;
+#course-thumbnail{
+  width: 100%;
   height: 100%;
-  width: 1000%;
-  transition: all .5s;
+  object-fit: cover;
+}
+
+.slider-item-helper .slider-container>* {
+  padding: 20px;
+  background-color: var(--mid-gray);
+}
+
+.other-course-title{
+  padding-right: 3.5rem;
 }
 
 .other-course-info{
   display: flex;
+  width: 100%;
   flex-direction: row;
   position: relative;
-  width: 95%;
-}
-
-.other-course-title {
-  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .other-course-difficulty {
@@ -359,31 +334,6 @@ div.course-description{
   box-shadow: inset 0 4px 5px var(--dark-gray);
 }
 
-.course-thumbnail{
-  width: 95%;
-  height: 90%;
-  margin: 10px auto;
-  position: relative;
-  overflow: hidden;
-}
-
-#course-thumbnail{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#course-slide {
-  height: 90%;
-  width: 22.5rem;
-  margin: auto 20px;
-  background-color: var(--mid-gray);
-  display: flex;
-  flex-direction: column;
-  place-items: center;
-  justify-content: center;
-}
-
 /* Responsiveness */
 
 @media screen and (min-width: 900px) {
@@ -434,25 +384,11 @@ div.course-description{
     width: 40%;
     margin: auto;
   }
-
-  .btn:first-of-type {
-    left: 0px
-  }
-
-  .btn:last-of-type {
-    right: 0px
-  }
 }
 
 @media screen and (min-width: 1000px) {
   .course-difficulty-bar{
     width: 550px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .other-courses-slider{
-    width: 50rem;
   }
 }
 
@@ -504,10 +440,6 @@ div.course-description{
     margin: auto;
   }
 
-  #course-slide{
-    width: 22rem;
-  }
-
   .pdf-wrapper {
     display: block;
     position: relative;
@@ -526,10 +458,8 @@ div.course-description{
     width: 100%;
     height: 100%;
   }
-}
-
-@media screen and (min-width: 1650px) {
-  .other-courses-slider{
-    width: 73rem;
+  
+  .slider-nav::before {
+    padding: 0;
   }
 }
