@@ -249,6 +249,10 @@ div.course-description{
   overflow: hidden;
 }
 
+/*:not(.btn){
+  overflow: hidden;
+}*/
+
 .btn{
   position: absolute;
   display: flex;
@@ -359,7 +363,6 @@ div.course-description{
   width: 95%;
   height: 90%;
   margin: 10px auto;
-  border: 1px solid var(--black);
   position: relative;
   overflow: hidden;
 }
