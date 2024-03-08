@@ -29,7 +29,7 @@ Style.css is for importing other css-files to it.
 @import "css/footer.css";
 @import "css/post-and-pages.css";
 @import "css/widgets.css";
-
+@import "css/front-page.css";
 @import "css/archive.css";
 @import "css/search.css";
 

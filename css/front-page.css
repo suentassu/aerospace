@@ -29,14 +29,18 @@ header {
     text-align: center;
 }
 
+
+
+/* front-page.css */
+
 .container {
     display: flex;
-    margin: -10px 0; /* Adjusted margin to remove horizontal gap */
-    overflow: hidden; /* Hide overflow from negative margin */
+    justify-content: space-between;
+    margin: 0 -10px; /* Adjusted margin to remove horizontal gap */
 }
 
 .block {
-    width: 727px;
+    width: calc(50% - 20px); /* Adjust the width calculation */
     height: 500px;
     background-size: cover;
     background-position: center;
@@ -46,6 +50,12 @@ header {
     overflow: hidden;
 }
 
+.block img {
+    width: 100%; /* Ensure the image takes 100% of the container width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any extra spacing caused by inline elements */
+}
+
 .block:hover {
     transform: scale(1.25); /* Increased scale factor on hover */
 }
@@ -53,16 +63,6 @@ header {
 .block:hover ~ .block {
     transform: scale(0.9);
 }
-
-.block:nth-child(1) {
-    background-image: url('../img/space-station-60615_1280.jpg');
-}
-
-.block:nth-child(2) {
-    background-image: url('../img/astronaut-11080_1280.jpg');
-}
-
-/* front-page.css */
 
 .block-text {
     position: absolute;
