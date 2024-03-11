@@ -29,7 +29,8 @@ if ( post_password_required() ) {
 					_x( 'Comments', 'comments title', 'twentythirteen' ),
 					'<span>' . get_the_title() . '</span>'
 				);
-			} else {
+			} else
+            {
 				printf(
 					/* translators: 1: The number of comments, 2: The post title. */
 					_nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s comments', get_comments_number(), 'comments title', 'twentythirteen' ),

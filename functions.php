@@ -19,7 +19,6 @@ function aerospace_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'aerospace_scripts' );
 
-
 if ( ! function_exists( 'aerospace_setup' ) ) :
     // Sets up theme defaults and registers support for various WordPress features.
 function aerospace_setup()
@@ -38,7 +37,6 @@ function aerospace_setup()
     'primary'   => __( 'Primary Menu', 'aerospace' ),
     'secondary' => __( 'Secondary Menu', 'aerospace' )
     ) );
-
 }
 endif; // aerospace_setup
 add_action( 'after_setup_theme', 'aerospace_setup' );
@@ -54,7 +52,6 @@ function custom_widgets() {
 		'before_title'  => '<h3>',
 		'after_title'   => '</h3>',
 	) );
-
 }
 add_action( 'widgets_init', 'custom_widgets' );
 
@@ -125,7 +122,6 @@ function numeric_posts_nav() {
         printf( '<li>%s</li>' . "\n", get_next_posts_link() );
   
     echo '</ul></div>' . "\n";
-  
 }
 
 // Comments field in blog posts, moving textfield to bottom

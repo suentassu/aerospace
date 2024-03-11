@@ -2,9 +2,6 @@
 get_header();
 ?>
 
-
-
-
 <div class="post-section">
     <div class="post-title">
         
@@ -17,7 +14,8 @@ get_header();
                 if ( has_post_thumbnail() ) { ?>
                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                    <?php
-                }else{ ?>
+                }
+                else{ ?>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/footer-astronaut.jpg" alt="">
                 <?php
                 }?>
@@ -31,8 +29,6 @@ get_header();
             </span>
                 <?php echo get_the_excerpt(); ?>
             </div>
-
-
 
         </div>
     <?php endwhile; else : ?>

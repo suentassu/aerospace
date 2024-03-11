@@ -9,7 +9,7 @@ get_header();
 <div class="content-container">
         <h1 class="first-title"><?php echo get_the_title(); ?></h1>
                 <?php
-                        the_content();
+                the_content();
                 ?>
 </div>
 
@@ -29,6 +29,7 @@ get_header();
                     </div>
                 </div>
             </div>
+
             <div class="course-container">
                 <img class="course-image" src="<?php the_field('course_two_img'); ?>"/>   
                 <div class="course-overlay">
@@ -37,6 +38,7 @@ get_header();
                     </div>
                 </div>
             </div>
+
             <div class="course-container">
                 <img class="course-image" src="<?php the_field('course_three_img'); ?>"/>   
                 <div class="course-overlay">
@@ -51,4 +53,3 @@ get_header();
 <?php 
 get_footer();
 ?>
-

@@ -2,9 +2,6 @@
 get_header();
 ?>
 
-
-
-
 <div class="post-section">
     <div class="post-title">
         
@@ -32,8 +29,6 @@ get_header();
                 <?php echo get_the_excerpt(); ?>
             </div>
 
-
-
         </div>
     <?php endwhile; else : ?>
 	    <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
@@ -43,9 +38,6 @@ get_header();
         <?php numeric_posts_nav(); ?>
     </span>
 </div>
-
-
-
 
 <?php
 get_footer();
