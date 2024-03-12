@@ -29,6 +29,7 @@ nav li {
   align-items: center;
   margin: 0 auto;
 }
+
 /* Header title */
 .main-title a {
   text-decoration: none;
@@ -87,19 +88,19 @@ nav li {
 .nav-overlay a:focus {
   color: #f1f1f1;
 }
-.nav-overlay .nav-closebtn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
+.nav-overlay .nav-closebtn,
 .nav-overlay .nav-closebtn-desk {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 2%;
+  right: 5%;
 }
 
 /* Responsive */
 @media screen and (min-width: 768px) {
+  .nav-overlay .nav-closebtn,
+  .nav-overlay .nav-closebtn-desk {
+    right: 10%;
+  }
   .icon-mobile {
     display: none;
   }
@@ -111,6 +112,10 @@ nav li {
   }
 }
 @media screen and (min-width: 1100px) {
+  .nav-overlay .nav-closebtn,
+  .nav-overlay .nav-closebtn-desk {
+    right: 20%;
+  }
   .icon-mobile {
     display: none;
   }
@@ -119,5 +124,30 @@ nav li {
   }
   .icon-desk {
     display: block;
+  }
+}
+/* Go back button */
+.nav-back {
+  width: 100%;
+  background-color: var(--nav);
+  padding: 5px 0;
+}
+#back-button {
+  background: none;
+  text-decoration: none;
+  color: white;
+  font-family: var(--main-font);
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  padding: 5px 0;
+  font-size: 1rem;
+}
+#back-button:hover {
+  color: var(--main-red);
+  padding: none;
+}
+@media screen and (min-width: 1100px) {
+  .nav-back {
+    background-color: none;
   }
 }

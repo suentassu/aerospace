@@ -1,4 +1,5 @@
-<?php 
+
+<?php
 /**
  * 404 page file
  * 
@@ -6,19 +7,22 @@
  * 
  * @package AeroSpace
  */
-get_header(); 
+
+
+get_header();
 ?>
 
-<main id="site-content"> 
-    <div class="section-inner">
-        
-        <h1 class="title"> 404 Lost in Space </h1>
-
-        <div class="intro-text"><p>Oops! Could not find the page you were looking for.</p></div>
-
-        <div class="button"><button type="button">Home</button></div>
+<div class="lost-container">
+    <div class="lost-content"> 
+        <h1 class="error-title">404 <br />Lost in Space</h1>
+            <p class="centered">Oops! Could not find the page you were looking for.</p>
+            <button class="error-button" type="button">Home</button>
     </div>
-</main>
+    <div class="lost-satellite">
+        <img class="lost-sattelite-img" src="http://localhost/aerospace/wp-content/themes/aerospace/img/satellite.png" alt="astornaut">
+    </div>
 
-<?php
-get_footer();
+</div>
+
+
+<?php get_footer(); ?>
