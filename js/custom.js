@@ -16,6 +16,17 @@ function closeNav() {
   document.getElementById("aeroNav").style.width = "0%";
 }
 
+/* Course page content viewer */
+function toggleContent(id) {
+  var elements = document.querySelectorAll('.content'); 
+  for (var i = 0; i < elements.length; i++) {
+    if (elements[i].id === id) {
+      elements[i].style.display = 'block';
+    } else {
+      elements[i].style.display = 'none';
+    }
+  }
+}
 // Changing classes or adding classes to Comments
 (function ($) {
   $("#comments #reply-title").addClass("reply-header");
@@ -33,6 +44,7 @@ function closeNav() {
   );
   $(".author-image > img").addClass("rounded-avatar");
 })(jQuery);
+
 // Function to toggle the popup
 function togglePopup() {
   var popup = document.getElementById("contactForm");
