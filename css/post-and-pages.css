@@ -240,7 +240,7 @@ div.course-description{
   margin: 10px 0;
 }
 
-.course-thumbnail{
+.slider-course-thumbnail{
   width: 95%;
   height: 80%;
   margin: auto;
@@ -249,7 +249,7 @@ div.course-description{
   overflow: hidden;
 }
 
-#course-thumbnail{
+#slider-course-thumbnail{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -260,26 +260,26 @@ div.course-description{
   background-color: var(--mid-gray);
 }
 
-.other-course-title{
-  padding-right: 3.5rem;
-}
-
-.other-course-info{
+.slider-course-info{
   display: flex;
   width: 100%;
   flex-direction: row;
   position: relative;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.other-course-difficulty {
+.slider-course-title{
+  font-size: 1.25rem;
+}
+
+.slider-course-difficulty {
   margin: 0 0 5px 5px;
   padding: 0px 10px;
   font-size: 0.9rem;
   border: 3px solid var(--border);
   border-radius: 15px;
-  height: 1.5rem;
+  height: 1.75rem;
   width: 10rem;
 }
 
@@ -380,7 +380,7 @@ div.course-description{
     padding: 0px 5px;
   }
 
-  .other-courses-title{
+  .slider-courses-title{
     width: 40%;
     margin: auto;
   }
@@ -389,6 +389,10 @@ div.course-description{
 @media screen and (min-width: 1000px) {
   .course-difficulty-bar{
     width: 550px;
+  }
+
+  .slider-nav::before {
+    padding: 0;
   }
 }
 
@@ -461,5 +465,17 @@ div.course-description{
   
   .slider-nav::before {
     padding: 0;
+  }
+}
+
+@media (min-width: 1050px) {
+  .slider-item-show1 .slider-container {
+      --swiffy-slider-item-count: 2;
+  }
+}
+
+@media (min-width: 1375px) {
+  .slider-item-show1 .slider-container{
+      --swiffy-slider-item-count: 3;
   }
 }

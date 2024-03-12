@@ -93,71 +93,71 @@ get_header();
                 </div>
                 <div class="other-courses-title">Other Courses</div>
                 <div id="carousel">
-                        <div class="swiffy-slider slider-item-show3 slider-item-show2-sm slider-item-ratio slider-item-ratio-4x3 slider-nav-round slider-nav-outside slider-nav-visible slider-indicators-round slider-item-helper">
+                        <div class="swiffy-slider slider-item-show1 slider-item-ratio slider-item-ratio-4x3 slider-nav-round slider-nav-outside-expand slider-nav-visible slider-indicators-round slider-item-helper">
                                 <ul class="slider-container">
                                         <li>
-                                                <div id="slide1 slides">
-                                                        <div class="course-thumbnail">
-                                                                <img id="course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                <div id="slide1">
+                                                        <div class="slider-course-thumbnail">
+                                                                <img id="slider-course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
                                                         </div>
-                                                        <div class="other-course-info">
-                                                                <p class="other-course-title">Course Name 1</p>
-                                                                <p class="other-course-difficulty" id="difficulty-100">Difficulty</p>      
+                                                        <div class="slider-course-info">
+                                                                <p class="slider-course-title">Course Name 1</p>
+                                                                <p class="slider-course-difficulty" id="difficulty-100">Difficulty</p>      
                                                         </div>
                                                 </div>
                                         </li>
                                         <li>
                                                 <div id="slide2">
-                                                        <div class="course-thumbnail">
-                                                                <img id="course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                        <div class="slider-course-thumbnail">
+                                                                <img id="slider-course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
                                                         </div>
-                                                        <div class="other-course-info">
-                                                                <p class="other-course-title">Course Name 2</p>
-                                                                <p class="other-course-difficulty" id="difficulty-75">Difficulty</p>      
+                                                        <div class="slider-course-info">
+                                                                <p class="slider-course-title">Course Name 2</p>
+                                                                <p class="slider-course-difficulty" id="difficulty-75">Difficulty</p>      
                                                         </div>
                                                 </div>
                                         </li>
                                         <li>
                                                 <div id="slide3">
-                                                        <div class="course-thumbnail">
-                                                                <img id="course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                        <div class="slider-course-thumbnail">
+                                                                <img id="slider-course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
                                                         </div>
-                                                        <div class="other-course-info">
-                                                                <p class="other-course-title">Course Name 3</p>
-                                                                <p class="other-course-difficulty" id="difficulty-50">Difficulty</p>      
+                                                        <div class="slider-course-info">
+                                                                <p class="slider-course-title">Course Name 3</p>
+                                                                <p class="slider-course-difficulty" id="difficulty-50">Difficulty</p>      
                                                         </div>
                                                 </div>
                                         </li>
                                         <li>
                                                 <div id="slide4">
-                                                        <div class="course-thumbnail">
-                                                                <img id="course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                        <div class="slider-course-thumbnail">
+                                                                <img id="slider-course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
                                                         </div>
-                                                        <div class="other-course-info">
-                                                                <p class="other-course-title">Course Name 4</p>
-                                                                <p class="other-course-difficulty" id="difficulty-25">Difficulty</p>      
+                                                        <div class="slider-course-info">
+                                                                <p class="slider-course-title">Course Name 4</p>
+                                                                <p class="slider-course-difficulty" id="difficulty-25">Difficulty</p>      
                                                         </div>
                                                 </div>
                                         </li>
                                         <li>
                                                 <div id="slide5">
-                                                        <div class="course-thumbnail">
-                                                                <img id="course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                        <div class="slider-course-thumbnail">
+                                                                <img id="slider-course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
                                                         </div>
-                                                        <div class="other-course-info">
-                                                                <p class="other-course-title">Course Name 5</p>
-                                                                <p class="other-course-difficulty" id="difficulty-0">Difficulty</p>      
+                                                        <div class="slider-course-info">
+                                                                <p class="slider-course-title">Course Name 5</p>
+                                                                <p class="slider-course-difficulty" id="difficulty-0">Difficulty</p>      
                                                         </div>
                                                 </div>
                                         </li>
                                         <li>
                                                 <div id="slide6">
-                                                        <div class="course-thumbnail">
-                                                                <img id="course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                        <div class="slider-course-thumbnail">
+                                                                <img id="slider-course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
                                                         </div>
-                                                        <div class="other-course-info">
-                                                                <p class="other-course-title">Course Name 6</p>
-                                                                <p class="other-course-difficulty" id="difficulty-100">Difficulty</p>      
+                                                        <div class="slider-course-info">
+                                                                <p class="slider-course-title">Course Name 6</p>
+                                                                <p class="slider-course-difficulty" id="difficulty-100">Difficulty</p>      
                                                         </div>
                                                 </div>
                                         </li>
