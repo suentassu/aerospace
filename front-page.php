@@ -11,8 +11,6 @@ get_header();
     <?php the_content(); ?>
 </div>
 
-
-
 <body>
     <div class="container">
         <div class="block">
@@ -32,6 +30,4 @@ get_header();
             <a href="#" class="block-link">Get Started</a>
         </div>
     </div>
-
     <?php get_footer(); ?>
-
