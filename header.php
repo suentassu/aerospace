@@ -58,15 +58,19 @@
         <form action="process_contact.php" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
-
             <label for="email">Email:</label>
             <input type="email" id="email" name="email">
-
-            <label for="subject">subject:</label>
+            <label for="subject">Subject:</label>
             <input type="text" id="subject" name="subject">
-
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="4" cols="30"></textarea>
+
+            <!-- Honeypot field (hidden from users) -->
+            <div style="display:none">
+                <label for="honeypot">Do not fill out this field</label>
+                <input type="text" id="honeypot" name="honeypot">
+            </div>
+
             <input type="submit" value="Submit">
         </form>
     </div>
@@ -74,23 +78,32 @@
 =======
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // Get form data
-        $name = $_POST['name'];
-        $email = $_POST['email'];
-        $subject = $_POST['subject'];
-        $message = $_POST['message'];
-
-        // Set up email
-        $to = "507762@vistacollege.nl"; // Your email address
-        $subject = "$subject";
-        $body = "Name: $name\nEmail: $email\nMessage: $message";
-        $headers = "From: $email";
-
-        // Send email
-        if (mail($to, $subject, $body, $headers)) {
-            echo "Thank you for your message. We'll get back to you shortly!";
+        // Check if the honeypot field is empty and all required fields are filled
+        if (!empty($_POST['honeypot']) || empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])) {
+            // If honeypot field is filled or required fields are empty, it's likely a spam submission
+            echo "Please fill in all required fields.";
+            // You can choose to handle this however you want, e.g., display an error message, log, etc.
         } else {
-            echo "Oops! Something went wrong and we couldn't send your message.";
+            // Proceed with processing the form submission
+            // Get form data
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $subject = $_POST['subject'];
+            $message = $_POST['message'];
+
+
+            // Set up email
+            $to = "your_email@example.com"; // Your email address
+            $subject = empty($subject) ? "New Contact Form Submission" : $subject; // Default subject if subject field is empty
+            $body = "Name: $name\nEmail: $email\nSubject: $subject\nMessage: $message"; // Include subject in the email body
+            $headers = "From: $email";
+
+            // Send email
+            if (mail($to, $subject, $body, $headers)) {
+                echo "Thank you for your message. We'll get back to you shortly!";
+            } else {
+                echo "Oops! Something went wrong and we couldn't send your message.";
+            }
         }
     }
     ?>
