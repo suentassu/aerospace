@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <?php wp_head(); ?>
 </head>
 <body>
@@ -48,7 +49,7 @@
     </div>
 
     <!-- Button to open the popup -->
-    <button id="openButton" onclick="togglePopup()">Contact Us</button>
+    <button id="openButton" onclick="togglePopup()"><i class="fas fa-envelope"></i></button>
 
     <!-- The popup form -->
     <div id="contactForm" class="popup">
@@ -69,5 +70,30 @@
             <input type="submit" value="Submit">
         </form>
     </div>
+<<<<<<< Updated upstream
+=======
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get form data
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+
+        // Set up email
+        $to = "507762@vistacollege.nl"; // Your email address
+        $subject = "$subject";
+        $body = "Name: $name\nEmail: $email\nMessage: $message";
+        $headers = "From: $email";
+
+        // Send email
+        if (mail($to, $subject, $body, $headers)) {
+            echo "Thank you for your message. We'll get back to you shortly!";
+        } else {
+            echo "Oops! Something went wrong and we couldn't send your message.";
+        }
+    }
+    ?>
+>>>>>>> Stashed changes
 
 </body>
