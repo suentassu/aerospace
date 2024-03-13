@@ -187,7 +187,6 @@ iframe {
 
 .course-content-list {
   width: 100%;
-  height: 30rem;
   margin: auto;
 }
 
@@ -220,9 +219,7 @@ button.content-button {
 }
 
 div.course-description {
-  overflow-y: auto;
-  height: 350px;
-  margin-bottom: 20px;
+  margin-bottom: 75px;
 }
 
 .other-courses-title {
@@ -233,7 +230,7 @@ div.course-description {
 }
 
 #carousel {
-  margin: 10px 0;
+  margin: 20px 0 100px 0;
 }
 
 .slider-course-thumbnail {
@@ -487,13 +484,13 @@ div.course-description {
 
   .course-content-list {
     width: 30%;
-    height: auto;
+    height: 33rem;
     margin: 0px 0px 10px 0px;
+    overflow-y: auto
   }
 
   div.course-description {
     height: 100%;
-    margin-bottom: 20px;
   }
 
   .other-courses-title {
