@@ -83,7 +83,9 @@ h5 {
   font-weight: 500;
   letter-spacing: 0.1em;
 }
-.first-title {
+/* First H1 on the page */
+.first-title,
+.centered {
   text-align: center;
 }
 p {
@@ -102,7 +104,6 @@ blockquote {
   color: var(--main-text);
   font-style: italic;
 }
-
 main {
   display: flex;
   flex-direction: column;
@@ -114,23 +115,17 @@ main {
   min-height: 100vh;
   min-height: 100svh;
 }
+
 /* Buttons */
-/* Back button */
-.back-button {
-  position: sticky;
-  z-index: 999;
-  transition: 1s;
-  top: 15%;
+button {
+  border: none;
+  text-decoration: none;
+<<<<<<< HEAD
 }
 
-button {
-  background-color: var(--main-button);
-  color: var(--dark-gray);
-  border: none 0;
-  border-radius: 12px 0;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
+
+
+=======
   display: inline-block;
   font-family: var(--button-font);
   font-size: 1.5rem;
@@ -159,3 +154,4 @@ button:hover {
 ::-webkit-scrollbar-thumb:hover{
   background:#c4c4c4;
 }
+>>>>>>> master

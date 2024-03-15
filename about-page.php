@@ -1,7 +1,8 @@
 <?php
 /**
- * Template Name: About page
+ * Template Name: About page 
  * 
+ * @package AeroSpace
  */
 
 get_header();

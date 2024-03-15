@@ -42,13 +42,16 @@
         </div>
 
     </nav>
+    <div class="nav-back">
+        <div class="nav-container ">
+            <button id="back-button" onclick="history.back()"><i class="fa-solid fa-circle-chevron-left"></i> Go Back</button>
+        </div>
+    </div>
 </header>
 
 <main class="main-overlay">
 
-    <div class="back-button nav-container ">
-        <a href="#" title="Back"><i class="fa-solid fa-circle-chevron-left"></i> Go back</a>
-    </div>
+
 
     <!-- Button to open the popup -->
     <button id="openButton" onclick="togglePopup()"><i class="fas fa-envelope"></i></button>
@@ -108,4 +111,4 @@
     }
     ?>
 
-</body>
+
