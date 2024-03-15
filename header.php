@@ -76,8 +76,6 @@
             <input type="submit" value="Submit">
         </form>
     </div>
-<<<<<<< Updated upstream
-=======
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Check if the honeypot field is empty and all required fields are filled
@@ -109,6 +107,5 @@
         }
     }
     ?>
->>>>>>> Stashed changes
 
 </body>
