@@ -6,16 +6,28 @@
 
 get_header();
 ?>
+
 <div class="course-page-inner-section">
-        <h1 class="course-title">Course name</h1>
+        <h1 class="course-title"><?php echo get_the_title(); ?></h1>
         <div class="course-difficulty-bar">
-               <p>Difficulty :</p> 
-               <div class="bar"></div>
-               <div class="bar"></div>
-               <div class="bar"></div>
-               <div class="bar"></div>
-               <div class="bar"></div>
+              
+<?php
+        // Get the difficulty value
+        $difficulty = get_field('difficulty');
+
+        // Output the difficulty bar
+        if ($difficulty) {
+                echo '<p>Difficulty Level: ' . $difficulty . '/5</p>';
+        echo '<div class="difficulty-bar">';
+        echo '<span class="bar" style="width: ' . ($difficulty * 20) . '%;"></span>';
+        echo '</div>';
+        
+        } else {
+        echo '<p>Difficulty level not set.</p>';
+        }
+?>
         </div>
+
         <div class="course-content-area">
                 <div class="course-area">
                         <div class="course-content">
@@ -29,7 +41,7 @@ get_header();
                                         </iframe>
                                 </div>
                                 <div class="pdf-wrapper content" id="fileA">
-                                        <embed width="100%" height="100%" src="../wp-content/themes/aerospace/img/PDF-template.pdf"/>
+                                        <embed width="100%" height="100%" src="https://docs.google.com/document/d/1_Reaa1vhORPcV38s5JbNsZBgV1tJqdiKpBOEr5S15o8/edit?usp=sharing"/>
                                 </div>
                                 <div class="video-wrapper content" id="video2">
                                         <iframe frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/DzZI8ou4uYc?si=IW2OizPGx85QwFNa" allowfullscreen allow="autoplay">
@@ -102,7 +114,7 @@ get_header();
                                                         </div>
                                                         <div class="slider-course-info">
                                                                 <p class="slider-course-title">Course Name 1</p>
-                                                                <p class="slider-course-difficulty" id="difficulty-100">Difficulty</p>      
+                                                                     
                                                         </div>
                                                 </div>
                                         </li>
@@ -113,7 +125,7 @@ get_header();
                                                         </div>
                                                         <div class="slider-course-info">
                                                                 <p class="slider-course-title">Course Name 2</p>
-                                                                <p class="slider-course-difficulty" id="difficulty-75">Difficulty</p>      
+                                                                     
                                                         </div>
                                                 </div>
                                         </li>
@@ -124,7 +136,7 @@ get_header();
                                                         </div>
                                                         <div class="slider-course-info">
                                                                 <p class="slider-course-title">Course Name 3</p>
-                                                                <p class="slider-course-difficulty" id="difficulty-50">Difficulty</p>      
+                                                                     
                                                         </div>
                                                 </div>
                                         </li>
@@ -135,7 +147,7 @@ get_header();
                                                         </div>
                                                         <div class="slider-course-info">
                                                                 <p class="slider-course-title">Course Name 4</p>
-                                                                <p class="slider-course-difficulty" id="difficulty-25">Difficulty</p>      
+                                                                    
                                                         </div>
                                                 </div>
                                         </li>
@@ -146,7 +158,7 @@ get_header();
                                                         </div>
                                                         <div class="slider-course-info">
                                                                 <p class="slider-course-title">Course Name 5</p>
-                                                                <p class="slider-course-difficulty" id="difficulty-0">Difficulty</p>      
+                                                                    
                                                         </div>
                                                 </div>
                                         </li>
@@ -157,7 +169,7 @@ get_header();
                                                         </div>
                                                         <div class="slider-course-info">
                                                                 <p class="slider-course-title">Course Name 6</p>
-                                                                <p class="slider-course-difficulty" id="difficulty-100">Difficulty</p>      
+                                                                     
                                                         </div>
                                                 </div>
                                         </li>

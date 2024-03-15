@@ -415,7 +415,7 @@ div.course-description {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0px 200px;
+    padding: 0 200px;
   }
   .course-area {
     display: block;
@@ -467,7 +467,7 @@ div.course-description {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0px 250px;
+    padding: 0 250px;
   }
 
   .course-area {
@@ -486,7 +486,7 @@ div.course-description {
     width: 30%;
     height: 33rem;
     margin: 0px 0px 10px 0px;
-    overflow-y: auto
+    overflow-y: auto;
   }
 
   div.course-description {
@@ -748,4 +748,25 @@ textarea:focus {
   .comments-section {
     width: 60%;
   }
+}
+
+.difficulty-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.difficulty-bar .bar {
+  display: block;
+  height: 100%;
+  background-color: var(--main-red);
+  transition: width 0.3s ease; /* Smooth transition for width changes */
+}
+
+.difficulty-bar p {
+  margin-top: 5px;
+  font-size: 14px;
 }
