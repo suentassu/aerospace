@@ -53,7 +53,7 @@
     border-radius: 0;
     display: inline-block;
     transition: background-color 0.3s, color 0.3s;
-    border-bottom: 2px solid var(--main-red);
+    border-bottom: 5px solid var(--main-red);
 }
 
 .image-block:hover .block-link {
