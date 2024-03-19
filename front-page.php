@@ -12,7 +12,7 @@ get_header();
 
 <div class="block-container">
     <div class="image-block">
-        <!-- Placeholder image in the first block -->
+        <div class="overlay"></div> 
         <img src="<?php echo get_template_directory_uri(); ?>/img/astronaut-11080_1280.jpg" alt="Image 1">
         <!-- Text above the link in the first block -->
         <p class="block-text">Heading for this item</p>
@@ -20,7 +20,7 @@ get_header();
         <a href="#" class="block-link">Get Started</a>
     </div>
     <div class="image-block">
-        <!-- Placeholder image in the second block -->
+        <div class="overlay"></div>
         <img src="<?php echo get_template_directory_uri(); ?>/img/astronaut-11080_1280.jpg" alt="Image 2">
         <!-- Text above the link in the second block -->
         <p class="block-text">Heading for this item</p>

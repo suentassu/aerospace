@@ -5,15 +5,15 @@
 }
 
 .image-block {
+    position: relative;
     width: 50%;
     height: 100vh;
     background-size: cover;
     background-position: center;
-    position: relative;
-    transition: width 0.3s, z-index 0.3s;
     box-sizing: border-box;
     overflow: hidden;
     margin-bottom: 0;
+    transition: width 0.3s, z-index 0.3s;
 }
 
 .image-block img {
@@ -28,11 +28,12 @@
     z-index: 1;
 }
 
-.block-text {
+.block-text,
+.block-link {
     position: absolute;
-    bottom: 60px;
+    bottom: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     color: #fff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     opacity: 1;
@@ -41,18 +42,15 @@
 }
 
 .block-link {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: calc(49% + 1px); 
     padding: 10px 20px;
     background-color: #211d1c;
     color: darkgrey;
     text-decoration: none;
-    border: 2px solid #211d1c;
     border-radius: 0;
     display: inline-block;
     transition: background-color 0.3s, color 0.3s;
+    border-bottom: 2px solid #6d1824;
 }
 
 .image-block:hover .block-link {
@@ -60,5 +58,21 @@
 }
 
 .block-link:hover {
-    background-color: rgb(134, 10, 10);
+    background-color: #6d1824;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s; 
+    pointer-events: none; 
+    opacity: 1; 
+}
+
+.image-block:hover .overlay {
+    opacity: 0; /* Hide the overlay when hovering */
 }
