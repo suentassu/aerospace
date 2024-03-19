@@ -1,18 +1,20 @@
 /*--------------------------------------------------------------
 CSS for Header
 --------------------------------------------------------------*/
-
+header {
+  width: 100%;
+  position: sticky;
+  z-index: 999;
+  transition: 1s;
+  top: 0;
+}
+/* Main navigation */
 nav {
   width: 100%;
   background-color: var(--nav-background);
-  position: sticky;
-  z-index: 1;
-  transition: 1s;
   font-size: 2em;
-  top: 0;
   padding: 10px;
 }
-
 nav ul {
   list-style-type: none;
 }
@@ -27,21 +29,34 @@ nav li {
   align-items: center;
   margin: 0 auto;
 }
-.main-title {
+
+/* Header title */
+.main-title a {
+  text-decoration: none;
   font-family: var(--header-font);
   text-transform: uppercase;
   text-shadow: var(--main-text-shadow);
-  font-weight: 500;
   letter-spacing: 0.1em;
+  color: var(--main-text);
 }
+/* Navigation hamburger and x icons */
 .icon-mobile {
   display: block;
 }
-.icon-tablet {
-  display: none;
-}
+.icon-tablet,
 .icon-desk {
   display: none;
+}
+.icon-mobile,
+.icon-tablet,
+.icon-desk {
+  cursor: pointer;
+}
+.icon-mobile:hover,
+.icon-tablet:hover,
+.icon-desk:hover {
+  color: var(--black);
+  transition: 0.5s ease;
 }
 .nav-overlay {
   height: 100%;
@@ -73,18 +88,19 @@ nav li {
 .nav-overlay a:focus {
   color: #f1f1f1;
 }
-.nav-overlay .nav-closebtn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
+.nav-overlay .nav-closebtn,
 .nav-overlay .nav-closebtn-desk {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 2%;
+  right: 5%;
 }
 
+/* Responsive */
 @media screen and (min-width: 768px) {
+  .nav-overlay .nav-closebtn,
+  .nav-overlay .nav-closebtn-desk {
+    right: 10%;
+  }
   .icon-mobile {
     display: none;
   }
@@ -96,6 +112,10 @@ nav li {
   }
 }
 @media screen and (min-width: 1100px) {
+  .nav-overlay .nav-closebtn,
+  .nav-overlay .nav-closebtn-desk {
+    right: 20%;
+  }
   .icon-mobile {
     display: none;
   }
@@ -104,5 +124,30 @@ nav li {
   }
   .icon-desk {
     display: block;
+  }
+}
+/* Go back button */
+.nav-back {
+  width: 100%;
+  background-color: var(--nav);
+  padding: 5px 0;
+}
+#back-button {
+  background: none;
+  text-decoration: none;
+  color: white;
+  font-family: var(--main-font);
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  padding: 5px 0;
+  font-size: 1rem;
+}
+#back-button:hover {
+  color: var(--main-red);
+  padding: none;
+}
+@media screen and (min-width: 1100px) {
+  .nav-back {
+    background-color: none;
   }
 }
