@@ -158,7 +158,6 @@ COURSES PAGE
 .course-content {
   width: 100%;
   margin-bottom: 10px;
-  border: none;
 }
 
 .video-wrapper {
@@ -193,7 +192,7 @@ iframe {
 button.content-button {
   width: 100%;
   margin: 10px 0;
-  padding: 5px 15px;
+  padding: 5px 20px;
   background: none;
   color: var(--white);
   font-size: 1em;
@@ -202,7 +201,12 @@ button.content-button {
 button.content-button:hover {
   color: var(--main-red);
 }
-
+.content-button-file,
+.content-button-video {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
 
 .about-this {
   font-size: 1.5rem;

@@ -89,36 +89,44 @@ get_header();
 
                 <?php if (!empty($video1)) : ?>
                         <div class="content-button-video">
-                        <button onclick="toggleContent('video1')" class="content-button">Video 1</button>
+                                <i class="fa-solid fa-video"></i>
+                        <button onclick="toggleContent('video1')" class="content-button">Video 1</button> 
                         </div>
                 <?php endif; ?>
 
                         <?php if (!empty($video2)) : ?>
                         <div class="content-button-video">
+                                <i class="fa-solid fa-video"></i>
                         <button onclick="toggleContent('video2')" class="content-button">Video 2</button>
                         </div>
                 <?php endif; ?>
 
                 <?php if (!empty($video3)) : ?>
                         <div class="content-button-video">
+                                <i class="fa-solid fa-video"></i>
                         <button onclick="toggleContent('video1')" class="content-button">Video 3</button>
                         </div>
                 <?php endif; ?>
 
                         <?php if (!empty($video4)) : ?>
                         <div class="content-button-video">
-                        <button onclick="toggleContent('video2')" class="content-button">Video 4</button>
+                        <i class="fa-solid fa-video"></i>
+                        <button onclick="toggleContent('video2')" class="content-button">Video 4 </button>
+                        
                         </div>
                 <?php endif; ?>
 
                 <?php if (!empty($fileA)) : ?>
                         <div class="content-button-file">
+                                <i class="fa-solid fa-file"></i>
                         <button onclick="toggleContent('fileA')" class="content-button">File A</button>
+                        
                         </div>
                 <?php endif; ?>
 
                 <?php if (!empty($fileB)) : ?>
                         <div class="content-button-file">
+                                <i class="fa-solid fa-file"></i>
                         <button onclick="toggleContent('fileB')" class="content-button">File B</button>
                         </div>
                 <?php endif; ?>
