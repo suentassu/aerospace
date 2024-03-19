@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: Video course page
+ * Template Post Type: page
  * 
  */
 
@@ -10,71 +11,100 @@ get_header();
 <div class="content-container">
         <h1 class="course-title"><?php echo get_the_title(); ?></h1>
         <div class="course-difficulty-bar">
-              
-<?php
-        // Get the difficulty value
-        $difficulty = get_field('difficulty');
+                <?php
+                        // Get the difficulty value
+                        $difficulty = get_field('difficulty');
 
-        // Output the difficulty bar
-        if ($difficulty) {
-                echo '<p>Difficulty Level: ' . $difficulty . '/5</p>';
-        echo '<div class="difficulty-bar">';
-        echo '<span class="bar" style="width: ' . ($difficulty * 20) . '%;"></span>';
-        echo '</div>';
-        
-        } else {
-        echo '<p>Difficulty level not set.</p>';
-        }
-?>
+                        // Output the difficulty bar
+                        if ($difficulty) {
+                                echo '<p>Difficulty Level: ' . $difficulty . '/5</p>';
+                        echo '<div class="difficulty-bar">';
+                        echo '<span class="bar" style="width: ' . ($difficulty * 20) . '%;"></span>';
+                        echo '</div>';
+                        
+                        } else {
+                        echo '<p>Difficulty level not set.</p>';
+                        }
+                ?>
         </div>
 
         <div class="course-content-area">
-                <div class="course-area">
-                        <div class="course-content">
-                                <!--
-                                        PROBLEM! PDF-files won't show up on mobile browsers if
-                                        using browser-native HTML embedding. Google Docs viewers 
-                                        would be the solution to this.
-                                -->
-                                <div class="video-wrapper content" id="video1" style="display: block;">
-                                        <iframe frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/32T0HS6deX0?si=_YWIx17aOWCaWUCg" allowfullscreen allow="autoplay">
-                                        </iframe>
-                                </div>
-                                <div class="pdf-wrapper content" id="fileA">
-                                        <embed width="100%" height="100%" src="https://docs.google.com/document/d/1_Reaa1vhORPcV38s5JbNsZBgV1tJqdiKpBOEr5S15o8/edit?usp=sharing"/>
-                                </div>
-                                <div class="video-wrapper content" id="video2">
-                                        <iframe frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/DzZI8ou4uYc?si=IW2OizPGx85QwFNa" allowfullscreen allow="autoplay">
-                                        </iframe>
-                                </div>
-                                <div class="pdf-wrapper content" id="fileB">
-                                        <embed width="100%" height="100%" src="../wp-content/themes/aerospace/img/PDF-template2.pdf"/>
-                                </div>
+        <div class="course-area">
+                <div class="course-content">
+                <?php
+                // Get ACF fields
+                $video1 = get_field('video1');
+                $video2 = get_field('video2');
+                $fileA = get_field('fileA');
+                $fileB = get_field('fileB');
+                ?>
+                <?php if (!empty($video1) || !empty($fileA) || !empty($video2) || !empty($fileB)) : ?>
 
+                <?php endif; ?>
+
+                <?php if (!empty($video1)) : ?>
+                        <div class="video-wrapper content" id="video1" style="<?php echo !empty($video1) ? 'display: none;' : 'display: none;'; ?>">
+                        <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video1); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
-                        <div class="course-content-list">
-                                <div class="course-content-title">
-                                        Content
-                                </div>
-                                <div class="content-button-video">
-                                        <button onclick="toggleContent('video1')" class="content-button">Video 1</button>
-                                </div>
-                                <div class="content-button-file">
-                                        <button onclick="toggleContent('fileA')" class="content-button">File A</button>
-                                </div>
-                                <div class="content-button-file">
-                                        <button onclick="toggleContent('fileB')" class="content-button">File B</button>
-                                </div>
-                                <div class="content-button-video">
-                                        <button onclick="toggleContent('video2')" class="content-button">Video 2</button>
-                                </div>
+                        <?php endif; ?>
+
+                <?php if (!empty($video2)) : ?>
+                        <div class="video-wrapper content" id="video2" style="<?php echo !empty($video2) ? 'display: none;' : 'display: none;'; ?>">
+                        <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video2); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
+                <?php endif; ?>
+
+                <?php if (!empty($fileA)) : ?>
+                        <div class="video-wrapper content" id="fileA" style="<?php echo !empty($fileA) ? 'display: none;' : 'display: none;'; ?>">
+                        <embed width="100%" height="100%" src="<?php echo esc_url($fileA); ?>"/>
+                        </div>
+                <?php endif; ?>
+
+                <?php if (!empty($fileB)) : ?>
+                        <div class="pdf-wrapper content" id="fileB" style="<?php echo !empty($fileB) ? 'display: none;' : 'display: none;'; ?>">
+                        <embed width="100%" height="100%" src="<?php echo esc_url($fileB); ?>"/>
+                        </div>
+                <?php endif; ?>
+
                 </div>
 
-                
+                <div class="course-content-list">
+                <div class="course-content-title">
+                        Content
+                </div>
+
+                <?php if (!empty($video1)) : ?>
+                        <div class="content-button-video">
+                        <button onclick="toggleContent('video1')" class="content-button">Video 1</button>
+                        </div>
+                <?php endif; ?>
+
+                        <?php if (!empty($video2)) : ?>
+                        <div class="content-button-video">
+                        <button onclick="toggleContent('video2')" class="content-button">Video 2</button>
+                        </div>
+
+                <?php endif; ?>
+                <?php if (!empty($fileA)) : ?>
+                        <div class="content-button-file">
+                        <button onclick="toggleContent('fileA')" class="content-button">File A</button>
+                        </div>
+
+                <?php endif; ?>
+                <?php if (!empty($fileB)) : ?>
+                        <div class="content-button-file">
+                        <button onclick="toggleContent('fileB')" class="content-button">File B</button>
+                        </div>
+                <?php endif; ?>
+
+                </div>
+
+</div>
+
+
                 <div class="course-description-area">
                         <div class="about-this">
-                                <p>About this model</p>
+                                <h3>About this model</h3>
                         </div>
                         <div class="course-description">
                                 <p class="course-descriprion"> 

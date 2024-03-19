@@ -18,12 +18,12 @@ function closeNav() {
 
 /* Course page content viewer */
 function toggleContent(id) {
-  var elements = document.querySelectorAll('.content'); 
+  var elements = document.querySelectorAll(".content");
   for (var i = 0; i < elements.length; i++) {
     if (elements[i].id === id) {
-      elements[i].style.display = 'block';
+      elements[i].style.display = "block";
     } else {
-      elements[i].style.display = 'none';
+      elements[i].style.display = "none";
     }
   }
 }
@@ -59,3 +59,19 @@ function togglePopup() {
 function closePopup() {
   document.getElementById("contactForm").style.display = "none";
 }
+
+function toggleContent(contentId) {
+  var elements = document.getElementsByClassName("content");
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.display = "none";
+  }
+  document.getElementById(contentId).style.display = "block";
+}
+
+// Show the first content by default
+window.onload = function () {
+  var firstContent = document.querySelector(".content");
+  if (firstContent) {
+    firstContent.style.display = "block";
+  }
+};

@@ -120,12 +120,6 @@ main {
 button {
   border: none;
   text-decoration: none;
-<<<<<<< HEAD
-}
-
-
-
-=======
   display: inline-block;
   font-family: var(--button-font);
   font-size: 1.5rem;
@@ -154,4 +148,3 @@ button:hover {
 ::-webkit-scrollbar-thumb:hover{
   background:#c4c4c4;
 }
->>>>>>> master
