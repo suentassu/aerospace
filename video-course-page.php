@@ -35,6 +35,8 @@ get_header();
                 // Get ACF fields
                 $video1 = get_field('video1');
                 $video2 = get_field('video2');
+                $video3 = get_field('video3');
+                $video4 = get_field('video4');
                 $fileA = get_field('fileA');
                 $fileB = get_field('fileB');
                 ?>
@@ -54,8 +56,20 @@ get_header();
                         </div>
                 <?php endif; ?>
 
+                <?php if (!empty($video3)) : ?>
+                        <div class="video-wrapper content" id="video2" style="<?php echo !empty($video3) ? 'display: none;' : 'display: none;'; ?>">
+                        <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video3); ?>" allowfullscreen allow="autoplay=0"></iframe>
+                        </div>
+                <?php endif; ?>
+
+                <?php if (!empty($video4)) : ?>
+                        <div class="video-wrapper content" id="video2" style="<?php echo !empty($video4) ? 'display: none;' : 'display: none;'; ?>">
+                        <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video4); ?>" allowfullscreen allow="autoplay=0"></iframe>
+                        </div>
+                <?php endif; ?>
+
                 <?php if (!empty($fileA)) : ?>
-                        <div class="video-wrapper content" id="fileA" style="<?php echo !empty($fileA) ? 'display: none;' : 'display: none;'; ?>">
+                        <div class="pdf-wrapper content" id="fileA" style="<?php echo !empty($fileA) ? 'display: none;' : 'display: none;'; ?>">
                         <embed width="100%" height="100%" src="<?php echo esc_url($fileA); ?>"/>
                         </div>
                 <?php endif; ?>
@@ -69,9 +83,9 @@ get_header();
                 </div>
 
                 <div class="course-content-list">
-                <div class="course-content-title">
-                        Content
-                </div>
+                        <div class="course-content-title">
+                                Content
+                        </div>
 
                 <?php if (!empty($video1)) : ?>
                         <div class="content-button-video">
@@ -83,14 +97,26 @@ get_header();
                         <div class="content-button-video">
                         <button onclick="toggleContent('video2')" class="content-button">Video 2</button>
                         </div>
-
                 <?php endif; ?>
+
+                <?php if (!empty($video3)) : ?>
+                        <div class="content-button-video">
+                        <button onclick="toggleContent('video1')" class="content-button">Video 3</button>
+                        </div>
+                <?php endif; ?>
+
+                        <?php if (!empty($video4)) : ?>
+                        <div class="content-button-video">
+                        <button onclick="toggleContent('video2')" class="content-button">Video 4</button>
+                        </div>
+                <?php endif; ?>
+
                 <?php if (!empty($fileA)) : ?>
                         <div class="content-button-file">
                         <button onclick="toggleContent('fileA')" class="content-button">File A</button>
                         </div>
-
                 <?php endif; ?>
+
                 <?php if (!empty($fileB)) : ?>
                         <div class="content-button-file">
                         <button onclick="toggleContent('fileB')" class="content-button">File B</button>

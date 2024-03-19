@@ -121,30 +121,24 @@ button {
   border: none;
   text-decoration: none;
   display: inline-block;
-  font-family: var(--button-font);
-  font-size: 1.5rem;
+  font-family: var(--header-font);
   transition-duration: 0.3s;
-}
-
-button:hover {
-  background-color: var(--hover-button);
-  padding: 15px 25px;
-  font-size: 1.75rem;
+  cursor: pointer;
 }
 
 /* Custom Scrollbar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: var(--dark-gray);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: var(--border);
 }
 
-::-webkit-scrollbar-thumb:hover{
-  background:#c4c4c4;
+::-webkit-scrollbar-thumb:hover {
+  background: #c4c4c4;
 }
