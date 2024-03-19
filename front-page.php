@@ -15,7 +15,7 @@ get_header();
         <div class="overlay"></div> 
         <img src="<?php echo get_template_directory_uri(); ?>/img/astronaut-11080_1280.jpg" alt="Image 1">
         <!-- Text above the link in the first block -->
-        <p class="block-text">Heading for this item</p>
+        <h2 class="block-text">Heading for this item</h2>
         <!-- Link in the first block -->
         <a href="#" class="block-link">Get Started</a>
     </div>
@@ -23,7 +23,7 @@ get_header();
         <div class="overlay"></div>
         <img src="<?php echo get_template_directory_uri(); ?>/img/astronaut-11080_1280.jpg" alt="Image 2">
         <!-- Text above the link in the second block -->
-        <p class="block-text">Heading for this item</p>
+        <h2 class="block-text">Heading for this item</h2>
         <!-- Link in the second block -->
         <a href="#" class="block-link">Get Started</a>
     </div>
