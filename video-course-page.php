@@ -12,11 +12,12 @@ get_header();
         <div class="course-difficulty-bar">
                 <?php
                         // Get the difficulty value
+                        $difficulty_title = get_field('difficulty_title');
                         $difficulty = get_field('difficulty');
 
                         // Output the difficulty bar
                         if ($difficulty) {
-                                echo '<p>Difficulty Level: ' . $difficulty . '/5</p>';
+                                echo '<p>' . $difficulty_title . ': ' . $difficulty . '/5</p>';
                         echo '<div class="difficulty-bar">';
                         echo '<span class="bar" style="width: ' . ($difficulty * 20) . '%;"></span>';
                         echo '</div>';
@@ -135,9 +136,19 @@ get_header();
                 </div>
 
                 <div class="course-content-list">
-                                <div class="course-content-title">
-                                        Content
-                                </div>
+
+                        <?php
+                        // Get the difficulty value
+                        $content_title = get_field('content_title');
+
+                        // Output the difficulty bar
+                        if ($content_title) {
+                        echo '<div class="course-content-title">' . $content_title . '</div>';
+
+                        } else {
+                        echo '<div class="course-content-title">Content</div>';
+                        }
+                        ?>
 
                         <!-- Video 1 Button -->
                         <?php if (!empty($video1)) : ?>
@@ -227,81 +238,85 @@ get_header();
 
                        
         <div class="single-content">
-                <h3>About this model</h3>
+                        <?php
+                        // Get the title value
+                        $about_title = get_field('about_title');
+
+                        // Output the title
+                        if ($about_title) {
+                        echo '<h3>' . $about_title . '</h3>';
+
+                        } else {
+                        echo '<h3>About this model</h3>';
+                        }
+                        ?>
+
                 <?php the_content(); ?>
         </div>
 
+                <?php
+                        // Get the title value
+                        $other_courses_title = get_field('other_courses_title');
+                        // Output the title
+                        if ($other_courses_title) {
+                                echo '<div class="other-courses-title centered">' . $other_courses_title. '</div>';
+                        } else {
+                        echo '<div class="other-courses-title centered">Other Courses</div>';
+                        }
+                ?>
 
-        <div class="other-courses-title centered">Other Courses</div>
                 <div id="carousel">
                         <div class="swiffy-slider slider-item-show1 slider-item-ratio slider-item-ratio-4x3 slider-nav-round slider-nav-outside-expand slider-nav-visible slider-indicators-round slider-item-helper">
                                 <ul class="slider-container">
                                         <li>
                                                 <div id="slide1">
+                                                        <a class="corousel-link" href="<?php the_field('slide1_url'); ?>">
                                                         <div class="slider-course-thumbnail">
-                                                                <img id="slider-course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                                <img id="slider-course-thumbnail" src="<?php the_field('slide1_img'); ?>"/>
                                                         </div>
                                                         <div class="slider-course-info">
-                                                                <p class="slider-course-title">Course Name 1</p>
-                                                                     
+                                                                <p class="slider-course-title"><?php the_field('slide1_name'); ?></p>
                                                         </div>
+                                                        </a>
                                                 </div>
                                         </li>
                                         <li>
                                                 <div id="slide2">
+                                                        <a class="corousel-link" href="<?php the_field('slide2_url'); ?>">
                                                         <div class="slider-course-thumbnail">
-                                                                <img id="slider-course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                                <img id="slider-course-thumbnail" src="<?php the_field('slide2_img'); ?>"/>
                                                         </div>
                                                         <div class="slider-course-info">
-                                                                <p class="slider-course-title">Course Name 2</p>
-                                                                     
+                                                                <p class="slider-course-title"><?php the_field('slide2_name'); ?></p>
                                                         </div>
+                                                        </a>
                                                 </div>
                                         </li>
                                         <li>
                                                 <div id="slide3">
+                                                        <a class="corousel-link" href="<?php the_field('slide3_url'); ?>">
                                                         <div class="slider-course-thumbnail">
-                                                                <img id="slider-course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                                <img id="slider-course-thumbnail" src="<?php the_field('slide3_img'); ?>"/>
                                                         </div>
                                                         <div class="slider-course-info">
-                                                                <p class="slider-course-title">Course Name 3</p>
-                                                                     
+                                                                <p class="slider-course-title"><?php the_field('slide3_name'); ?></p>
                                                         </div>
+                                                        </a>
                                                 </div>
                                         </li>
                                         <li>
                                                 <div id="slide4">
+                                                        <a class="corousel-link" href="<?php the_field('slide4_url'); ?>">
                                                         <div class="slider-course-thumbnail">
-                                                                <img id="slider-course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
+                                                                <img id="slider-course-thumbnail" src="<?php the_field('slide4_img'); ?>"/>
                                                         </div>
                                                         <div class="slider-course-info">
-                                                                <p class="slider-course-title">Course Name 4</p>
-                                                                    
+                                                                <p class="slider-course-title"><?php the_field('slide4_name'); ?></p>
                                                         </div>
+                                                        </a>
                                                 </div>
                                         </li>
-                                        <li>
-                                                <div id="slide5">
-                                                        <div class="slider-course-thumbnail">
-                                                                <img id="slider-course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
-                                                        </div>
-                                                        <div class="slider-course-info">
-                                                                <p class="slider-course-title">Course Name 5</p>
-                                                                    
-                                                        </div>
-                                                </div>
-                                        </li>
-                                        <li>
-                                                <div id="slide6">
-                                                        <div class="slider-course-thumbnail">
-                                                                <img id="slider-course-thumbnail" src="../wp-content/themes/aerospace/img/stars-1.jpg"/>
-                                                        </div>
-                                                        <div class="slider-course-info">
-                                                                <p class="slider-course-title">Course Name 6</p>
-                                                                     
-                                                        </div>
-                                                </div>
-                                        </li>
+
                                 </ul>
                         <span class="slider-nav"></span>
                         <span class="slider-nav slider-nav-next"></span>

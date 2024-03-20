@@ -228,17 +228,20 @@ button.content-button:hover {
 }
 .content-button.active {
   color: var(--links);
-  font-weight: 800;
+  font-weight: 700;
   border-top: 1px solid var(--links);
   border-bottom: 1px solid var(--links);
   background-color: var(--pic-overlay);
+  letter-spacing: 0.1em;
 }
 .about-this {
   font-size: 1.5rem;
   padding-top: 20px;
   text-transform: uppercase;
 }
-
+a.corousel-link {
+  text-decoration: none;
+}
 #carousel {
   margin: 20px 0 100px 0;
 }
