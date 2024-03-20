@@ -71,8 +71,8 @@ input[type="submit"]:hover {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    padding: 5px 10px;
-    font-size: 14px;
+    padding: 5px 13px;
+    font-size: 24px;
     background-color: var(--nav-background);
     color: white;
     border: none;
