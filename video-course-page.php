@@ -1,7 +1,6 @@
 <?php
 /**
  * Template Name: Video course page
- * Template Post Type: page
  * 
  */
 
@@ -29,147 +28,211 @@ get_header();
         </div>
 
         <div class="course-content-area">
-        <div class="course-area">
-                <div class="course-content">
-                <?php
-                // Get ACF fields
-                $video1 = get_field('video1');
-                $video2 = get_field('video2');
-                $video3 = get_field('video3');
-                $video4 = get_field('video4');
-                $fileA = get_field('fileA');
-                $fileB = get_field('fileB');
-                ?>
-                <?php if (!empty($video1) || !empty($fileA) || !empty($video2) || !empty($fileB)) : ?>
+                <div class="course-area">
+                        <div class="course-content">
+                        <!-- ACF fields -->
+                        <?php
+                        $video1 = get_field('video1');
+                        $video2 = get_field('video2');
+                        $video3 = get_field('video3');
+                        $video4 = get_field('video4');
+                        $video5 = get_field('video5');
+                        $video6 = get_field('video6');
+                        $video7 = get_field('video7');
+                        $video8 = get_field('video8');
+                        $video9 = get_field('video9');
+                        $video10 = get_field('video10');
+                        $fileA = get_field('fileA');
+                        $fileB = get_field('fileB');
+                        ?>
+                        <?php if (!empty($video1) || !empty($video2) || !empty($video3) || !empty($video4) || !empty($video5) || !empty($video6) || !empty($video7) || !empty($video8) || !empty($video9) || !empty($video10) || !empty($fileA) || !empty($fileB)) : ?>
 
-                <?php endif; ?>
+                        <?php endif; ?>
 
-                <?php if (!empty($video1)) : ?>
-                        <div class="video-wrapper content" id="video1" style="<?php echo !empty($video1) ? 'display: none;' : 'display: none;'; ?>">
-                        <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video1); ?>" allowfullscreen allow="autoplay=0"></iframe>
+                        <!-- Video 1 -->
+                        <?php if (!empty($video1)) : ?>
+                        <div class="video-wrapper content" id="video1" style="display: none;">
+                                <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video1); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
                         <?php endif; ?>
 
-                <?php if (!empty($video2)) : ?>
-                        <div class="video-wrapper content" id="video2" style="<?php echo !empty($video2) ? 'display: none;' : 'display: none;'; ?>">
-                        <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video2); ?>" allowfullscreen allow="autoplay=0"></iframe>
+                        <!-- Video 2 -->
+                        <?php if (!empty($video2)) : ?>
+                        <div class="video-wrapper content" id="video2" style="display: none;">
+                                <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video2); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
-                <?php endif; ?>
+                        <?php endif; ?>
 
-                <?php if (!empty($video3)) : ?>
-                        <div class="video-wrapper content" id="video2" style="<?php echo !empty($video3) ? 'display: none;' : 'display: none;'; ?>">
-                        <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video3); ?>" allowfullscreen allow="autoplay=0"></iframe>
+                        <!-- Video 3 -->
+                        <?php if (!empty($video3)) : ?>
+                        <div class="video-wrapper content" id="video3" style="display: none;">
+                                <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video3); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
-                <?php endif; ?>
+                        <?php endif; ?>
 
-                <?php if (!empty($video4)) : ?>
-                        <div class="video-wrapper content" id="video2" style="<?php echo !empty($video4) ? 'display: none;' : 'display: none;'; ?>">
-                        <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video4); ?>" allowfullscreen allow="autoplay=0"></iframe>
+                        <!-- Video 4 -->
+                        <?php if (!empty($video4)) : ?>
+                        <div class="video-wrapper content" id="video4" style="display: none;">
+                                <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video4); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
-                <?php endif; ?>
+                        <?php endif; ?>
 
-                <?php if (!empty($fileA)) : ?>
-                        <div class="pdf-wrapper content" id="fileA" style="<?php echo !empty($fileA) ? 'display: none;' : 'display: none;'; ?>">
-                        <embed width="100%" height="100%" src="<?php echo esc_url($fileA); ?>"/>
+                        <!-- Video 5 -->
+                        <?php if (!empty($video5)) : ?>
+                        <div class="video-wrapper content" id="video4" style="display: none;">
+                                <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video5); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
-                <?php endif; ?>
+                        <?php endif; ?>
 
-                <?php if (!empty($fileB)) : ?>
-                        <div class="pdf-wrapper content" id="fileB" style="<?php echo !empty($fileB) ? 'display: none;' : 'display: none;'; ?>">
-                        <embed width="100%" height="100%" src="<?php echo esc_url($fileB); ?>"/>
+                        <!-- Video 6 -->
+                        <?php if (!empty($video6)) : ?>
+                        <div class="video-wrapper content" id="video4" style="display: none;">
+                                <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video6); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
-                <?php endif; ?>
+                        <?php endif; ?>
 
+                        <!-- Video 7 -->
+                        <?php if (!empty($video7)) : ?>
+                        <div class="video-wrapper content" id="video4" style="display: none;">
+                                <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video7); ?>" allowfullscreen allow="autoplay=0"></iframe>
+                        </div>
+                        <?php endif; ?>
+
+                        <!-- Video 8 -->
+                        <?php if (!empty($video8)) : ?>
+                        <div class="video-wrapper content" id="video4" style="display: none;">
+                                <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video8); ?>" allowfullscreen allow="autoplay=0"></iframe>
+                        </div>
+                        <?php endif; ?>
+
+                        <!-- Video 9 -->
+                        <?php if (!empty($video9)) : ?>
+                        <div class="video-wrapper content" id="video4" style="display: none;">
+                                <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video9); ?>" allowfullscreen allow="autoplay=0"></iframe>
+                        </div>
+                        <?php endif; ?>
+
+                        <!-- Video 10 -->
+                        <?php if (!empty($video10)) : ?>
+                        <div class="video-wrapper content" id="video4" style="display: none;">
+                                <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video10); ?>" allowfullscreen allow="autoplay=0"></iframe>
+                        </div>
+                        <?php endif; ?>
+
+                        <!-- File A -->
+                        <?php if (!empty($fileA)) : ?>
+                        <div class="pdf-wrapper content" id="fileA" style="display: none;">
+                                <embed width="100%" height="100%" src="<?php echo esc_url($fileA); ?>"/>
+                        </div>
+                        <?php endif; ?>
+
+                        <!-- File B -->
+                        <?php if (!empty($fileB)) : ?>
+                        <div class="pdf-wrapper content" id="fileB" style="display: none;">
+                                <embed width="100%" height="100%" src="<?php echo esc_url($fileB); ?>"/>
+                        </div>
+                        <?php endif; ?>
                 </div>
 
                 <div class="course-content-list">
-                        <div class="course-content-title">
-                                Content
-                        </div>
+                                <div class="course-content-title">
+                                        Content
+                                </div>
 
-                <?php if (!empty($video1)) : ?>
+                        <!-- Video 1 Button -->
+                        <?php if (!empty($video1)) : ?>
                         <div class="content-button-video">
-                                <i class="fa-solid fa-video"></i>
-                        <button onclick="toggleContent('video1')" class="content-button">Video 1</button> 
+                                <button onclick="toggleContent('video1')" class="content-button" id="video1-button"><i class="fa-solid fa-video icon-margin"></i> Video 1 name is longer or something. </button>
                         </div>
-                <?php endif; ?>
+                        <?php endif; ?>
 
+                        <!-- Video 2 Button -->
                         <?php if (!empty($video2)) : ?>
                         <div class="content-button-video">
-                                <i class="fa-solid fa-video"></i>
-                        <button onclick="toggleContent('video2')" class="content-button">Video 2</button>
+                                <button onclick="toggleContent('video2')" class="content-button" id="video2-button"><i class="fa-solid fa-video icon-margin"></i> Video 2 Lets see how it looks with longer video names</button>
                         </div>
-                <?php endif; ?>
+                        <?php endif; ?>
 
-                <?php if (!empty($video3)) : ?>
+                        <!-- Video 3 Button -->
+                        <?php if (!empty($video3)) : ?>
                         <div class="content-button-video">
-                                <i class="fa-solid fa-video"></i>
-                        <button onclick="toggleContent('video1')" class="content-button">Video 3</button>
+                                <button onclick="toggleContent('video3')" class="content-button" id="video3-button"><i class="fa-solid fa-video icon-margin"></i> Video 3 Title is important!</button>
                         </div>
-                <?php endif; ?>
+                        <?php endif; ?>
 
+                        <!-- Video 4 Button -->
                         <?php if (!empty($video4)) : ?>
                         <div class="content-button-video">
-                        <i class="fa-solid fa-video"></i>
-                        <button onclick="toggleContent('video2')" class="content-button">Video 4 </button>
-                        
+                                <button onclick="toggleContent('video4')" class="content-button" id="video4-button"><i class="fa-solid fa-video icon-margin"></i> Video 4</button>
                         </div>
-                <?php endif; ?>
+                        <?php endif; ?>
 
-                <?php if (!empty($fileA)) : ?>
+                        <!-- Video 5 Button -->
+                        <?php if (!empty($video5)) : ?>
+                        <div class="content-button-video">
+                                <button onclick="toggleContent('video4')" class="content-button" id="video4-button"><i class="fa-solid fa-video icon-margin"></i> Video 5</button>
+                        </div>
+                        <?php endif; ?>
+
+                        <!-- Video 6 Button -->
+                        <?php if (!empty($video6)) : ?>
+                        <div class="content-button-video">
+                                <button onclick="toggleContent('video4')" class="content-button" id="video4-button"><i class="fa-solid fa-video icon-margin"></i> Video 6</button>
+                        </div>
+                        <?php endif; ?>
+
+                        <!-- Video 7 Button -->
+                        <?php if (!empty($video7)) : ?>
+                        <div class="content-button-video">
+                                <button onclick="toggleContent('video4')" class="content-button" id="video4-button"><i class="fa-solid fa-video icon-margin"></i> Video 7</button>
+                        </div>
+                        <?php endif; ?>
+
+                        <!-- Video 8 Button -->
+                        <?php if (!empty($video8)) : ?>
+                        <div class="content-button-video">
+                                <button onclick="toggleContent('video4')" class="content-button" id="video4-button"><i class="fa-solid fa-video icon-margin"></i> Video 8</button>
+                        </div>
+                        <?php endif; ?>
+
+                        <!-- Video 9 Button -->
+                        <?php if (!empty($video9)) : ?>
+                        <div class="content-button-video">
+                                <button onclick="toggleContent('video4')" class="content-button" id="video4-button"><i class="fa-solid fa-video icon-margin"></i> Video 4</button>
+                        </div>
+                        <?php endif; ?>
+
+                        <!-- Video 10 Button -->
+                        <?php if (!empty($video10)) : ?>
+                        <div class="content-button-video">
+                                <button onclick="toggleContent('video4')" class="content-button" id="video4-button"><i class="fa-solid fa-video icon-margin"></i> Video 10</button>
+                        </div>
+                        <?php endif; ?>
+
+                        <!-- File A Button -->
+                        <?php if (!empty($fileA)) : ?>
                         <div class="content-button-file">
-                                <i class="fa-solid fa-file"></i>
-                        <button onclick="toggleContent('fileA')" class="content-button">File A</button>
-                        
+                                <button onclick="toggleContent('fileA')" class="content-button" id="fileA-button"><i class="fa-solid fa-file icon-margin"></i> File A</button>
                         </div>
-                <?php endif; ?>
+                        <?php endif; ?>
 
-                <?php if (!empty($fileB)) : ?>
+                        <!-- File B Button -->
+                        <?php if (!empty($fileB)) : ?>
                         <div class="content-button-file">
-                                <i class="fa-solid fa-file"></i>
-                        <button onclick="toggleContent('fileB')" class="content-button">File B</button>
+                                <button onclick="toggleContent('fileB')" class="content-button" id="fileB-button"><i class="fa-solid fa-file icon-margin"></i> File B</button>
                         </div>
-                <?php endif; ?>
-
+                        <?php endif; ?>
                 </div>
+        </div>
 
-</div>
+                       
+        <div class="single-content">
+                <h3>About this model</h3>
+                <?php the_content(); ?>
+        </div>
 
 
-                <div class="course-description-area">
-                        <div class="about-this">
-                                <h3>About this model</h3>
-                        </div>
-                        <div class="course-description">
-                                <p class="course-descriprion"> 
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                        Ultricies mi quis hendrerit dolor magna eget est lorem. Auctor eu 
-                                        augue ut lectus. Dui vivamus arcu felis bibendum ut. Id diam vel 
-                                        quam elementum pulvinar etiam non. Hac habitasse platea dictumst 
-                                        quisque sagittis purus sit amet volutpat. Velit egestas dui id ornare 
-                                        arcu odio ut. Elit at imperdiet dui accumsan sit amet nulla. Sem 
-                                        nulla pharetra diam sit amet nisl suscipit. Pellentesque pulvinar 
-                                        pellentesque habitant morbi tristique senectus. Ultricies leo integer 
-                                        malesuada nunc vel risus commodo viverra maecenas. Integer quis auctor 
-                                        elit sed vulputate mi. Diam in arcu cursus euismod quis viverra. Nunc
-                                        faucibus a pellentesque sit. Sed pulvinar proin gravida hendrerit lectus a. 
-                                        Tristique risus nec feugiat in fermentum posuere urna nec tincidunt. 
-                                        Integer quis auctor elit sed.
-                                </p>
-                                <p class="course-descriprion"> 
-                                        Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper. Duis 
-                                        ut diam quam nulla porttitor. Potenti nullam ac tortor vitae purus faucibus. 
-                                        Fames ac turpis egestas sed tempus urna et pharetra. Ultrices neque ornare 
-                                        aenean euismod. Malesuada fames ac turpis egestas maecenas pharetra. In hac 
-                                        habitasse platea dictumst. Quam id leo in vitae. Enim sed faucibus turpis in 
-                                        eu mi. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. 
-                                        Amet est placerat in egestas erat imperdiet sed euismod. Tortor posuere ac ut 
-                                        consequat semper viverra nam.
-                                </p>
-                        </div>
-                </div>
-                <div class="other-courses-title">Other Courses</div>
+        <div class="other-courses-title">Other Courses</div>
                 <div id="carousel">
                         <div class="swiffy-slider slider-item-show1 slider-item-ratio slider-item-ratio-4x3 slider-nav-round slider-nav-outside-expand slider-nav-visible slider-indicators-round slider-item-helper">
                                 <ul class="slider-container">
@@ -240,10 +303,9 @@ get_header();
                                                 </div>
                                         </li>
                                 </ul>
-
-                                        <span class="slider-nav"></span>
-                                        <span class="slider-nav slider-nav-next"></span>
-                        </div>
+                        <span class="slider-nav"></span>
+                        <span class="slider-nav slider-nav-next"></span>
+                </div>
         </div>    
 </div>
 

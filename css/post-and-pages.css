@@ -143,11 +143,26 @@ COURSES PAGE
   justify-content: space-between;
   width: 100%;
 }
+.difficulty-bar {
+  width: 70%;
+  height: 20px;
+  background-color: var(--mid-gray);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: var(--main-box-shadow);
+}
 
-.bar {
+.difficulty-bar .bar {
+  display: block;
+  height: 100%;
   background-color: var(--main-red);
-  height: 10px;
-  width: 60px;
+  transition: width 0.3s ease;
+}
+
+.difficulty-bar p {
+  margin-top: 5px;
+  font-size: 14px;
 }
 
 .course-area {
@@ -163,6 +178,7 @@ COURSES PAGE
 .video-wrapper {
   position: relative;
   padding-bottom: 56.25%;
+  box-shadow: var(--main-box-shadow);
 }
 
 iframe {
@@ -188,11 +204,12 @@ iframe {
   padding: 15px;
   font-size: 1.5rem;
 }
-
+.icon-margin {
+  margin-right: 10px;
+}
 button.content-button {
   width: 100%;
-  margin: 10px 0;
-  padding: 5px 20px;
+  padding: 5px 10px;
   background: none;
   color: var(--white);
   font-size: 1em;
@@ -205,9 +222,14 @@ button.content-button:hover {
 .content-button-video {
   display: flex;
   align-items: center;
-  margin: 0 10px;
 }
-
+.content-button.active {
+  color: var(--links);
+  font-weight: 800;
+  border-top: 1px solid var(--links);
+  border-bottom: 1px solid var(--links);
+  background-color: var(--pic-overlay);
+}
 .about-this {
   font-size: 1.5rem;
   padding-top: 20px;
@@ -221,7 +243,7 @@ button.content-button:hover {
   padding: 0px 5px;
 }
 
-div.course-description {
+.course-description {
   margin-bottom: 75px;
 }
 
@@ -269,131 +291,6 @@ div.course-description {
   font-size: 1.25rem;
 }
 
-.slider-course-difficulty {
-  margin: 0 0 5px 5px;
-  padding: 0px 10px;
-  font-size: 0.9rem;
-  border: 3px solid var(--border);
-  border-radius: 15px;
-  height: 1.75rem;
-  width: 10rem;
-}
-
-#difficulty-0 {
-  background: -webkit-linear-gradient(
-    90deg,
-    var(--main-red) 0%,
-    var(--dark-gray) 0%
-  );
-  background: -o-linear-gradient(
-    90deg,
-    var(--main-red) 0%,
-    var(--dark-gray) 0%
-  );
-  background: -moz-linear-gradient(
-    90deg,
-    var(--main-red) 0%,
-    var(--dark-gray) 0%
-  );
-  background: linear-gradient(90deg, var(--main-red) 0%, var(--dark-gray) 0%);
-}
-
-#difficulty-25 {
-  background: -webkit-linear-gradient(
-    90deg,
-    var(--main-red) 25%,
-    var(--dark-gray) 25%
-  );
-  background: -o-linear-gradient(
-    90deg,
-    var(--main-red) 25%,
-    var(--dark-gray) 25%
-  );
-  background: -moz-linear-gradient(
-    90deg,
-    var(--main-red) 25%,
-    var(--dark-gray) 25%
-  );
-  background: linear-gradient(90deg, var(--main-red) 25%, var(--dark-gray) 25%);
-  -webkit-box-shadow: inset 0 4px 5px var(--dark-gray);
-  -o-box-shadow: inset 0 4px 5px var(--dark-gray);
-  -moz-box-shadow: inset 0 4px 5px var(--dark-gray);
-  box-shadow: inset 0 4px 5px var(--dark-gray);
-}
-
-#difficulty-50 {
-  background: -webkit-linear-gradient(
-    90deg,
-    var(--main-red) 50%,
-    var(--dark-gray) 50%
-  );
-  background: -o-linear-gradient(
-    90deg,
-    var(--main-red) 50%,
-    var(--dark-gray) 50%
-  );
-  background: -moz-linear-gradient(
-    90deg,
-    var(--main-red) 50%,
-    var(--dark-gray) 50%
-  );
-  background: linear-gradient(90deg, var(--main-red) 50%, var(--dark-gray) 50%);
-  -webkit-box-shadow: inset 0 4px 5px var(--dark-gray);
-  -o-box-shadow: inset 0 4px 5px var(--dark-gray);
-  -moz-box-shadow: inset 0 4px 5px var(--dark-gray);
-  box-shadow: inset 0 4px 5px var(--dark-gray);
-}
-
-#difficulty-75 {
-  background: -webkit-linear-gradient(
-    90deg,
-    var(--main-red) 75%,
-    var(--dark-gray) 75%
-  );
-  background: -o-linear-gradient(
-    90deg,
-    var(--main-red) 75%,
-    var(--dark-gray) 75%
-  );
-  background: -moz-linear-gradient(
-    90deg,
-    var(--main-red) 75%,
-    var(--dark-gray) 75%
-  );
-  background: linear-gradient(90deg, var(--main-red) 75%, var(--dark-gray) 75%);
-  -webkit-box-shadow: inset 0 4px 5px var(--dark-gray);
-  -o-box-shadow: inset 0 4px 5px var(--dark-gray);
-  -moz-box-shadow: inset 0 4px 5px var(--dark-gray);
-  box-shadow: inset 0 4px 5px var(--dark-gray);
-}
-
-#difficulty-100 {
-  background: -webkit-linear-gradient(
-    0deg,
-    var(--main-red) 70%,
-    var(--nav-background) 25%
-  );
-  background: -o-linear-gradient(
-    0deg,
-    var(--main-red) 70%,
-    var(--nav-background) 25%
-  );
-  background: -moz-linear-gradient(
-    0deg,
-    var(--main-red) 70%,
-    var(--nav-background) 25%
-  );
-  background: linear-gradient(
-    0deg,
-    var(--main-red) 60%,
-    var(--nav-background) 100%
-  );
-  -webkit-box-shadow: inset 0 4px 5px var(--dark-gray);
-  -o-box-shadow: inset 0 4px 5px var(--dark-gray);
-  -moz-box-shadow: inset 0 4px 5px var(--dark-gray);
-  box-shadow: inset 0 4px 5px var(--dark-gray);
-}
-
 /* Responsiveness */
 @media screen and (min-width: 900px) {
   .two-choice-section {
@@ -425,10 +322,6 @@ div.course-description {
   .course-difficulty-bar {
     width: 100%;
   }
-  .bar {
-    width: 75px;
-  }
-
   .course-content {
     width: 100%;
     margin-bottom: 10px;
@@ -442,10 +335,6 @@ div.course-description {
   }
 }
 @media screen and (min-width: 1000px) {
-  .course-difficulty-bar {
-    width: 550px;
-  }
-
   .slider-nav::before {
     padding: 0;
   }
@@ -481,17 +370,17 @@ div.course-description {
     margin-right: 10px;
   }
   .course-difficulty-bar {
-    width: 600px;
+    width: 65%;
   }
 
   .course-content-list {
     width: 30%;
-    height: 33rem;
-    margin: 0px 0px 10px 0px;
+    height: 30rem;
+    margin-bottom: 10px;
     overflow-y: auto;
   }
 
-  div.course-description {
+  .course-description {
     height: 100%;
   }
 
@@ -750,25 +639,4 @@ textarea:focus {
   .comments-section {
     width: 60%;
   }
-}
-
-.difficulty-bar {
-  width: 100%;
-  height: 20px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  overflow: hidden;
-}
-
-.difficulty-bar .bar {
-  display: block;
-  height: 100%;
-  background-color: var(--main-red);
-  transition: width 0.3s ease; /* Smooth transition for width changes */
-}
-
-.difficulty-bar p {
-  margin-top: 5px;
-  font-size: 14px;
 }
