@@ -1,3 +1,4 @@
+/* CSS for desktop */
 .block-container {
     display: flex;
     justify-content: space-between;
@@ -78,4 +79,41 @@
 
 .image-block:hover .overlay {
     opacity: 0; 
+}
+
+/* Media query for mobile */
+@media (max-width: 767px) {
+    .block-container {
+        display: block; /* Stack blocks vertically */
+    }
+
+    .overlay {
+        display: none; /* Hide overlay on mobile */
+    }
+
+    .image-block {
+        width: 100%;
+        height: auto;
+    }
+
+    .block-link {
+        bottom: 70px; /* Adjust bottom position */
+    }
+
+    .image-block:hover {
+        width: 100%; /* Remove hover effect */
+    }
+
+    .image-block:hover .block-link {
+        opacity: 1; /* Ensure block link is visible */
+    }
+
+    .block-link:hover {
+        background-color: #211d1c; /* Prevent hover effect on block link */
+    }
+
+    .block-text {
+        font-size: 20px; /* Adjust font size for smaller text */
+    }
+    
 }
