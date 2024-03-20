@@ -6,13 +6,14 @@ General CSS
   /* Main colors */
   --main-red: #6d1824;
   --dark-gray: #1e1e1e;
+  --mid-gray: #4f4f4f;
   --border: #707070;
   --nav-background: rgb(67, 27, 33);
-  --black: #000;
 
-  --main-text: #ffffff;
+  --main-text: #fff;
   --links: #c4c4c4;
-  --black: #000000;
+  --black: #000;
+  --white: #fff;
 
   --main-button: #ffffffc4;
   --hover-button: #fff;
@@ -22,9 +23,10 @@ General CSS
   --pic-overlay: rgb(0, 0, 0, 0.5);
   --footer: rgba(0, 0, 0, 0.6);
   --nav: rgba(3, 3, 3, 0.8);
+  --slider-bg: rgba(71, 71, 71, 0.66);
 
   /* Shadows */
-  --main-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  --main-box-shadow: rgba(0, 0, 0, 0.5) 0 2px 12px;
   --main-text-shadow: 2px 3px 7px rgba(5, 2, 2, 0.357);
 
   /* Main fonts */
@@ -54,6 +56,8 @@ body {
   font-size: 1.2em;
   letter-spacing: 0.1em;
   overflow-x: hidden;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
 }
 /* Links */
 a {
@@ -61,12 +65,12 @@ a {
   transition: 0.5s ease;
 }
 a:hover {
-  color: var(--black);
+  color: var(--main-red);
   transition: 0.5s ease;
 }
-a:visited {
-  color: var(--);
-}
+/* a:visited {
+  color: var(--main-red);
+} */
 
 /* Headers, p */
 h1,
@@ -80,7 +84,9 @@ h5 {
   font-weight: 500;
   letter-spacing: 0.1em;
 }
-.first-title {
+/* First H1 on the page */
+.first-title,
+.centered {
   text-align: center;
 }
 p {
@@ -99,7 +105,6 @@ blockquote {
   color: var(--main-text);
   font-style: italic;
 }
-
 main {
   display: flex;
   flex-direction: column;
@@ -111,31 +116,30 @@ main {
   min-height: 100vh;
   min-height: 100svh;
 }
-/* Buttons */
-/* Back button */
-.back-button {
-  position: sticky;
-  z-index: 999;
-  transition: 1s;
-  top: 15%;
-}
 
+/* Buttons */
 button {
-  background-color: var(--main-button);
-  color: var(--dark-gray);
-  border: none 0;
-  border-radius: 12px 0;
-  padding: 10px 20px;
-  text-align: center;
+  border: none;
   text-decoration: none;
   display: inline-block;
-  font-family: var(--button-font);
-  font-size: 20px;
+  font-family: var(--header-font);
   transition-duration: 0.3s;
+  cursor: pointer;
 }
 
-button:hover {
-  background-color: var(--hover-button);
-  padding: 15px 25px;
-  font-size: 25px;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c4c4c4;
 }

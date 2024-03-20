@@ -1,7 +1,8 @@
 <?php
 /**
- * Template Name: About page
+ * Template Name: About page 
  * 
+ * @package AeroSpace
  */
 
 get_header();
@@ -15,7 +16,7 @@ get_header();
 </div>
 
 <div class="moon-container">
-        <img class="floating-moon" src="../wp-content/themes/aerospace/img/moon.png" alt="astornaut">
+        <img class="floating-moon" src="<?php the_field('floating_moon'); ?>" alt="astornaut">
 </div>
 
 <?php get_footer(); ?>

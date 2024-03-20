@@ -10,6 +10,9 @@ get_header();
     <?php the_content(); ?>
 </div>
 
+
+
+
 <div class="block-container">
     <div class="image-block">
         <div class="overlay"></div> 
