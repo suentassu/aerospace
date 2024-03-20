@@ -24,13 +24,9 @@ Style.css is for importing other css-files to it.
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
-@import "css/menus.css";
 @import "css/header.css";
 @import "css/footer.css";
 @import "css/post-and-pages.css";
-@import "css/widgets.css";
 @import "css/pop-up.css";
-@import "css/archive.css";
-@import "css/search.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Saira+Condensed&display=swap");
