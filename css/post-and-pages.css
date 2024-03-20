@@ -198,15 +198,18 @@ iframe {
   width: 100%;
   margin: auto;
 }
-
-.course-content-title {
+.course-content-title,
+.other-courses-title {
   background: var(--main-red);
-  padding: 15px;
+  padding: 10px;
   font-size: 1.5rem;
+  text-transform: uppercase;
+  box-shadow: var(--main-box-shadow);
 }
 .icon-margin {
   margin-right: 10px;
 }
+
 button.content-button {
   width: 100%;
   padding: 5px 10px;
@@ -234,24 +237,6 @@ button.content-button:hover {
   font-size: 1.5rem;
   padding-top: 20px;
   text-transform: uppercase;
-}
-
-.course-description {
-  text-align: center;
-  width: 90%;
-  margin: auto;
-  padding: 0px 5px;
-}
-
-.course-description {
-  margin-bottom: 75px;
-}
-
-.other-courses-title {
-  background: var(--main-red);
-  padding: 20px 10px;
-  text-align: center;
-  font-size: 1.5rem;
 }
 
 #carousel {
