@@ -50,13 +50,12 @@
 
     <!-- Button to open the popup -->
     <button class="Btn" onclick="togglePopup()"><i class="fa-solid fa-envelope fa-2xl"></i></button>
-    <svg class="svg" viewBox="0 0 512 512">
 
         <!-- The popup form -->
         <div id="contactForm" class="popup">
             <span class="close" onclick="closePopup()">&times;</span>
             <h2>Contact Us</h2>
-            <form action="process_contact.php" method="POST">
+            <form method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
                 <label for="email">Email:</label>
