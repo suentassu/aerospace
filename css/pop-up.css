@@ -78,6 +78,7 @@ input[type="submit"]:hover {
   color: white;
   border: none;
   cursor: pointer;
+  z-index: 200;
 }
 
 #openButton:hover {

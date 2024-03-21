@@ -1,23 +1,5 @@
 /* CSS for desktop */
 .block-container {
-<<<<<<< HEAD
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-direction: column;
-}
-
-.image-block {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    box-sizing: border-box;
-    overflow: hidden;
-    margin-bottom: 0;
-    transition: width 0.3s, z-index 0.3s;
-=======
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -33,7 +15,6 @@
   overflow: hidden;
   margin-bottom: 0;
   transition: width 0.3s, z-index 0.3s;
->>>>>>> 7175a069e2318a7c46e5ee312d7bc5121ebbc58c
 }
 
 .image-block img {
@@ -43,14 +24,11 @@
   display: block;
 }
 
-<<<<<<< HEAD
-=======
 .image-block:hover {
   width: 62.5%;
   z-index: 1;
 }
 
->>>>>>> 7175a069e2318a7c46e5ee312d7bc5121ebbc58c
 .block-text {
   position: absolute;
   top: 40%;
@@ -116,7 +94,7 @@
 
   .image-block {
     width: 100%;
-    height: auto;
+    height: 30rem;
   }
 
   .block-link {
@@ -136,19 +114,6 @@
   }
 
   .block-text {
-    font-size: 20px; /* Adjust font size for smaller text */
+    font-size: 1.75rem; /* Adjust font size for smaller text */
   }
-}
-
-@media screen and (min-width: 800px) {
-    .block-container{
-        flex-direction: row;
-    }
-    .image-block{
-        width: 50%;
-    }
-    .image-block:hover {
-        width: 62.5%;
-        z-index: 1;
-    }
 }
