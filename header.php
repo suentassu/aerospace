@@ -44,19 +44,36 @@
 
 <main class="main-overlay">
 
+    <div class="back-button nav-container ">
+        <a href="#" title="Back"><i class="fa-solid fa-circle-chevron-left"></i> Go back</a>
+    </div>
 
     <!-- Button to open the popup -->
-    <button id="openButton" onclick="togglePopup()"><i class="fas fa-envelope"></i></button>
+    <button class="Btn" onclick="togglePopup()"><i class="fa-solid fa-envelope fa-2xl"></i></button>
+    <svg class="svg" viewBox="0 0 512 512">
 
-    <!-- The popup form -->
-    <div id="contactForm" class="popup">
-        <span class="close" onclick="closePopup()">&times;</span>
-        <h2>Contact Us</h2>
-<?php if ( is_active_sidebar( 'footer_widget' ) ) : ?>
-            <?php dynamic_sidebar( 'footer_widget' ); ?>
-        <?php endif; ?>
+        <!-- The popup form -->
+        <div id="contactForm" class="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Contact Us</h2>
+            <form action="process_contact.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="30"></textarea>
 
+                <!-- Honeypot field (hidden from users) -->
+                <div style="display:none">
+                    <label for="honeypot">Do not fill out this field</label>
+                    <input type="text" id="honeypot" name="honeypot">
+                </div>
 
+                <input type="submit" value="Submit">
+            </form>
 
         
     </div>

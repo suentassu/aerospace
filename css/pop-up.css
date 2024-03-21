@@ -67,19 +67,53 @@ input[type="submit"]:hover {
   background-color: var(--nav-background);
 }
 
-/* Button styling */
-#openButton {
+.Btn {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 5px 10px;
-  font-size: 14px;
-  background-color: var(--nav-background);
-  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80px;
+  height: 80px;
   border: none;
+  padding: 0px 20px;
+  background-color:  var(--nav-background);
+  color: white;
+  font-weight: 500;
   cursor: pointer;
-  z-index: 200;
+  border-radius: 50px;
+  box-shadow:  var(--nav-background);
+  transition-duration: .3s;
+  bottom: 20px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
 }
+
+.svg {
+  width:;
+  position: absolute;
+  right:;
+  margin-right: 20px;
+  fill: white;
+  transition-duration: .3s;
+}
+
+.Btn:hover {
+  color: transparent;
+}
+
+.Btn:hover svg {
+  right: 43%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: .3s;
+}
+
+.Btn:active {
+  transform: translate(3px , 3px);
+  transition-duration: .3s;
+  box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}
+
 
 #openButton:hover {
   background-color: var(--nav-background);
