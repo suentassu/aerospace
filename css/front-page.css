@@ -1,4 +1,6 @@
+/* CSS for desktop */
 .block-container {
+<<<<<<< HEAD
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -15,65 +17,127 @@
     overflow: hidden;
     margin-bottom: 0;
     transition: width 0.3s, z-index 0.3s;
+=======
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.image-block {
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: 0;
+  transition: width 0.3s, z-index 0.3s;
+>>>>>>> 7175a069e2318a7c46e5ee312d7bc5121ebbc58c
 }
 
 .image-block img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
+<<<<<<< HEAD
+=======
+.image-block:hover {
+  width: 62.5%;
+  z-index: 1;
+}
+
+>>>>>>> 7175a069e2318a7c46e5ee312d7bc5121ebbc58c
 .block-text {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--main-text);
-    font-family: var(--header-font);
-    opacity: 1;
-    transition: opacity 0.3s, z-index 0.3s;
-    z-index: 2;
-    letter-spacing: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--main-text);
+  font-family: var(--header-font);
+  opacity: 1;
+  transition: opacity 0.3s, z-index 0.3s;
+  z-index: 2;
+  letter-spacing: 0;
 }
 
 .block-link {
-    position: absolute;
-    bottom: 48%; 
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: #211d1c;
-    color: darkgrey;
-    text-decoration: none;
-    border-radius: 0;
-    display: inline-block;
-    transition: background-color 0.3s, color 0.3s;
-    border-bottom: 2px solid var(--main-red);
+  position: absolute;
+  bottom: 48%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: var(--dark-gray);
+  color: var(--links);
+  text-decoration: none;
+  border-radius: 0;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+  border-bottom: 5px solid var(--main-red);
 }
 
 .image-block:hover .block-link {
-    opacity: 1;
+  opacity: 1;
 }
 
 .block-link:hover {
-    background-color: var(--main-red);
+  background-color: var(--main-red);
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--pic-overlay);
-    transition: opacity 0.3s; 
-    pointer-events: none; 
-    opacity: 1; 
+.overlay,
+.overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--pic-overlay);
+  transition: opacity 0.3s;
+  pointer-events: none;
+  opacity: 1;
 }
 
 .image-block:hover .overlay {
-    opacity: 0; 
+  opacity: 0;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 767px) {
+  .block-container {
+    display: block; /* Stack blocks vertically */
+  }
+
+  .overlay {
+        display: none; 
+    }
+
+  .image-block {
+    width: 100%;
+    height: auto;
+  }
+
+  .block-link {
+    bottom: 70px; /* Adjust bottom position */
+  }
+
+  .image-block:hover {
+    width: 100%; /* Remove hover effect */
+  }
+
+  .image-block:hover .block-link {
+    opacity: 1; /* Ensure block link is visible */
+  }
+
+  .block-link:hover {
+    background-color: #211d1c; /* Prevent hover effect on block link */
+  }
+
+  .block-text {
+    font-size: 20px; /* Adjust font size for smaller text */
+  }
 }
 
 @media screen and (min-width: 800px) {

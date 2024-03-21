@@ -1,10 +1,10 @@
 /*--------------------------------------------------------------
-CSS for Post and Pages 
+CSS for Posts and Pages 
 --------------------------------------------------------------*/
 /* Universal codes */
 .content-container {
   width: 90%;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -58,7 +58,6 @@ COURSES PAGE
   display: flex;
   flex-direction: column;
 }
-
 .courses-row {
   display: flex;
   align-items: center;
@@ -67,7 +66,6 @@ COURSES PAGE
   position: relative;
   justify-content: space-evenly;
 }
-
 .course-container {
   position: relative;
   width: 100%;
@@ -75,15 +73,14 @@ COURSES PAGE
   height: 30rem;
   margin: 10px;
   border: 1px var(--border) solid;
+  box-shadow: var(--main-box-shadow);
   text-align: center;
 }
-
 .course-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .course-overlay {
   position: absolute;
   top: 0;
@@ -94,7 +91,6 @@ COURSES PAGE
   width: 100%;
   background-color: var(--pic-overlay);
 }
-
 .course-name {
   position: relative;
   width: 100%;
@@ -102,7 +98,6 @@ COURSES PAGE
   padding: 20px 0px;
   background-color: var(--main-red);
 }
-
 .course-name:hover {
   padding: 30px 0px;
   font-size: 1.5rem;
@@ -114,13 +109,11 @@ COURSES PAGE
 .astronaut-div {
   height: 5rem;
 }
-
 @keyframes astronaut-floating {
   50% {
     transform: rotate(3deg) translateX(25px) translateY(-20px);
   }
 }
-
 .floating-astronaut {
   height: 175px;
   padding-right: 40px;
@@ -131,10 +124,168 @@ COURSES PAGE
     infinite;
 }
 
-/* Course */
-/* Responsiveness */
+/* COURSE PAGE */
 
+.course-page-inner-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px;
+}
+
+.course-title {
+  padding-top: 50px;
+}
+
+.course-difficulty-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.difficulty-bar {
+  width: 70%;
+  height: 20px;
+  background-color: var(--mid-gray);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: var(--main-box-shadow);
+}
+
+.difficulty-bar .bar {
+  display: block;
+  height: 100%;
+  background-color: var(--main-red);
+  transition: width 0.3s ease;
+}
+
+.difficulty-bar p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.course-area {
+  display: block;
+  width: 100%;
+}
+
+.course-content {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  box-shadow: var(--main-box-shadow);
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pdf-wrapper,
+.video-wrapper {
+  display: none;
+}
+
+.course-content-list {
+  width: 100%;
+  margin: auto;
+}
+.course-content-title,
+.other-courses-title {
+  background: var(--main-red);
+  padding: 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  box-shadow: var(--main-box-shadow);
+}
+.icon-margin {
+  margin-right: 10px;
+}
+
+button.content-button {
+  width: 100%;
+  padding: 5px 10px;
+  background: none;
+  color: var(--white);
+  font-size: 1em;
+  text-align: left;
+}
+button.content-button:hover {
+  color: var(--main-red);
+}
+.content-button-file,
+.content-button-video {
+  display: flex;
+  align-items: center;
+}
+.content-button.active {
+  color: var(--links);
+  font-weight: 700;
+  border-top: 1px solid var(--links);
+  border-bottom: 1px solid var(--links);
+  background-color: var(--pic-overlay);
+  letter-spacing: 0.1em;
+}
+.about-this {
+  font-size: 1.5rem;
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+a.corousel-link {
+  text-decoration: none;
+}
+#carousel {
+  margin: 20px 0 100px 0;
+}
+
+.slider-course-thumbnail {
+  width: 95%;
+  height: 80%;
+  margin: auto;
+  padding-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#slider-course-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-item-helper .slider-container > * {
+  padding: 20px;
+  background-color: var(--mid-gray);
+}
+
+.slider-course-info {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.slider-course-title {
+  font-size: 1.25rem;
+  padding: 0 10px;
+}
+
+/* Responsiveness */
 @media screen and (min-width: 900px) {
+  .two-choice-section {
+    width: 90%;
+    margin: auto;
+  }
   .courses-row {
     flex-direction: row;
     align-items: center;
@@ -147,9 +298,40 @@ COURSES PAGE
     padding-right: 50px;
     padding-bottom: 50px;
   }
+  /* COURSE */
+  .course-page-inner-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 200px;
+  }
+  .course-area {
+    display: block;
+  }
+  .course-difficulty-bar {
+    width: 100%;
+  }
+  .course-content {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .course-description {
+    padding: 0px 5px;
+  }
+  .slider-courses-title {
+    width: 40%;
+    margin: auto;
+  }
 }
-
+@media screen and (min-width: 1000px) {
+  .slider-nav::before {
+    padding: 0;
+  }
+}
 @media screen and (min-width: 1500px) {
+  .two-choice-section {
+    width: 80%;
+  }
   .courses-row {
     padding: 0px 250px;
     align-items: center;
@@ -159,8 +341,78 @@ COURSES PAGE
     padding-right: 150px;
     padding-bottom: 0px;
   }
+
+  /* COURSE */
+  .course-page-inner-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 250px;
+  }
+
+  .course-area {
+    display: flex;
+  }
+
+  .course-content {
+    width: 70%;
+    margin-right: 10px;
+  }
+  .course-difficulty-bar {
+    width: 65%;
+  }
+
+  .course-content-list {
+    width: 30%;
+    height: 30rem;
+    margin-bottom: 10px;
+    overflow-y: auto;
+  }
+
+  .course-description {
+    height: 100%;
+  }
+
+  .other-courses-title {
+    width: 40%;
+    margin: auto;
+  }
+
+  .pdf-wrapper {
+    display: block;
+    position: relative;
+    padding-left: 56.25%;
+    height: 1000px;
+  }
+
+  .content {
+    display: none;
+  }
+
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider-nav::before {
+    padding: 0;
+  }
 }
 
+@media (min-width: 1050px) {
+  .slider-item-show1 .slider-container {
+    --swiffy-slider-item-count: 2;
+  }
+}
+
+@media (min-width: 1375px) {
+  .slider-item-show1 .slider-container {
+    --swiffy-slider-item-count: 3;
+  }
+}
 /* Archive.php, page.php, index.php, Single.php, search.php
 * Extra posts and pages that are needed for wordpress  */
 
@@ -183,7 +435,47 @@ COURSES PAGE
   height: auto;
   box-shadow: var(--main-box-shadow);
 }
-/* Index.php responsiveness */
+span.date-time {
+  padding-bottom: 10px;
+}
+/* Numeric pagination (in archive etc pages show page number at the end of the page) */
+span.page-numbers {
+  margin: 10px;
+}
+.numeric-navigation {
+  display: flex;
+  justify-content: center;
+}
+.numeric-navigation ul {
+  display: flex;
+  align-items: center;
+}
+.numeric-navigation li a,
+.numeric-navigation li a:hover,
+.numeric-navigation li.active a,
+.numeric-navigation li.disabled {
+  color: var(--main-text);
+  text-decoration: none;
+}
+
+.numeric-navigation li {
+  display: inline;
+}
+.numeric-navigation li a,
+.numeric-navigation li a:hover,
+.numeric-navigation li.active a,
+.numeric-navigation li.disabled {
+  cursor: pointer;
+  padding: 12px;
+  padding: 0.75rem;
+  margin: 5px;
+}
+.numeric-navigation li a:hover,
+.numeric-navigation li.active a {
+  background-color: var(--main-red);
+}
+
+/* Responsiveness */
 @media screen and (min-width: 900px) {
   .post-container {
     display: flex;
@@ -204,5 +496,136 @@ COURSES PAGE
   }
   .post-info-image {
     width: 30%;
+  }
+}
+
+/* Single.php */
+.posted-category {
+  padding: 0.5em;
+  margin: 20px 0;
+  border-left: 5px solid var(--main-red);
+  color: var(--main-text);
+  background-color: var(--nav);
+}
+span.date-time-post,
+span.date-time {
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+}
+.single-content {
+  padding: 20px 0;
+}
+
+/* Comments.php */
+.comments-area {
+  margin: 0 auto;
+}
+.side-by-side {
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+.who-says {
+  margin: 0 5px 0 10px;
+}
+.comment-date {
+  font-style: italic;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.rounded-avatar {
+  border-radius: 50%;
+  box-shadow: var(--main-box-shadow);
+}
+.comments-section {
+  margin: auto;
+  padding: 10px;
+}
+.reply-header {
+  margin-top: 10px;
+}
+.comment-full {
+  width: 100%;
+  margin: 5px 0;
+}
+.comment-height {
+  height: 25px;
+}
+.post-comment,
+#submit {
+  background-color: var(--main-red);
+  border: none;
+  color: var(--main-text);
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: var(--header-font);
+  text-shadow: var(--main-text-shadow);
+  text-transform: uppercase;
+  box-shadow: var(--main-box-shadow);
+  transition: 0.5s ease;
+  cursor: pointer;
+  letter-spacing: 0.1em;
+}
+.post-comment {
+  font-size: 13px;
+}
+.post-comment:hover,
+#submit:hover {
+  background: var(--dark-gray);
+  transition: 0.5s ease;
+  color: var(--main-text);
+}
+.post-comment:active,
+#submit:active {
+  position: relative;
+  top: 1px;
+}
+.li-style {
+  border-bottom: 1px solid var(--main-red);
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+#respond {
+  padding: 15px 10px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Highlight active form field */
+#respond input[type="text"],
+textarea {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid var(--main-red);
+}
+
+#respond input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  box-shadow: 0 0 10px rgba(109, 24, 36, 1);
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(109, 24, 36, 1);
+}
+
+/* Responsiveness */
+@media screen and (min-width: 700px) {
+  .comments-section {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 890px) {
+  .comments-section {
+    width: 60%;
   }
 }
