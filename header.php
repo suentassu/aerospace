@@ -44,9 +44,7 @@
 
 <main class="main-overlay">
 
-    <div class="back-button nav-container ">
-        <a href="#" title="Back"><i class="fa-solid fa-circle-chevron-left"></i> Go back</a>
-    </div>
+
 
     <!-- Button to open the popup -->
     <button class="Btn" onclick="togglePopup()"><i class="fa-solid fa-envelope fa-2xl"></i></button>
