@@ -10,7 +10,7 @@ footer {
   margin-top: auto;
   background: no-repeat url("../img/footer-astronaut.jpg");
   background-position: 25% 20%;
-  min-height: 70vh;
+  min-height: 50vh;
 }
 .footer-overlay {
   background-color: var(--footer);
@@ -23,7 +23,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 50vh;
 }
 .footer-content {
   margin: 1.2em;
