@@ -34,7 +34,6 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--main-text);
   font-family: var(--header-font);
   opacity: 1;
   transition: opacity 0.3s, z-index 0.3s;
@@ -65,8 +64,7 @@
   background-color: var(--main-red);
 }
 
-.overlay,
-.overlay2 {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -89,8 +87,8 @@
   }
 
   .overlay {
-        display: none; 
-    }
+    display: none;
+  }
 
   .image-block {
     width: 100%;
