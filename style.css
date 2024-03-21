@@ -27,6 +27,7 @@ Style.css is for importing other css-files to it.
 @import "css/header.css";
 @import "css/footer.css";
 @import "css/post-and-pages.css";
+@import "css/front-page.css";
 @import "css/pop-up.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Saira+Condensed&display=swap");
