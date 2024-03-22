@@ -116,7 +116,8 @@ COURSES PAGE
 }
 .floating-astronaut {
   height: 175px;
-  padding-right: 40px;
+  padding-right: 91px;
+  margin-bottom: 2em;
   float: right;
   position: relative;
   z-index: 1;
