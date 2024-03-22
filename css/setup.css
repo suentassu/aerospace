@@ -58,6 +58,8 @@ body {
   overflow-x: hidden;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
+  min-height: 100vh;
+  min-height: 100svh;
 }
 /* Links */
 a {
