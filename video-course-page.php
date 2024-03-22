@@ -266,6 +266,8 @@ get_header();
                 ?>
 
                 <div id="carousel">
+    <div class="slider">
+        <div class="slides">
                         <div class="swiffy-slider slider-item-show1 slider-item-ratio slider-item-ratio-4x3 slider-nav-round slider-nav-outside-expand slider-nav-visible slider-indicators-round slider-item-helper">
                                 <ul class="slider-container">
                                         <li>
@@ -321,6 +323,8 @@ get_header();
                         <span class="slider-nav"></span>
                         <span class="slider-nav slider-nav-next"></span>
                 </div>
+        </div>
+    </div>
         </div>    
 </div>
 
