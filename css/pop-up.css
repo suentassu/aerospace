@@ -6,7 +6,7 @@
   right: 20px;
   background-color: var(--main-red);
   padding: 20px; /* Increased padding */
-  border: 4px solid var(--nav-background);
+  border: 2px solid var(--nav-background);
   z-index: 9999;
   width: 450px; /* Increased width */
   max-width: 80%; /* Added maximum width */
@@ -26,13 +26,13 @@
 .close {
   color: #aaa;
   float: right;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: var(--black);
   text-decoration: none;
   cursor: pointer;
 }
@@ -56,11 +56,12 @@ textarea {
 input[type="submit"] {
   padding: 8px;
   background-color: var(--nav-background);
-  color: white;
-  border: none;
+  color: var(--main-text);
   cursor: pointer;
   height: 65px;
-  font-size: 30px;
+  font-size: 25px;
+  font-family: var(--header-font);
+  border: none;
 }
 
 input[type="submit"]:hover {
@@ -77,11 +78,10 @@ input[type="submit"]:hover {
   border: none;
   padding: 0px 20px;
   background-color: var(--main-red);
-  color: white;
-  font-weight: 500;
+  color: var(--main-text);
   cursor: pointer;
   border-radius: 50px;
-  box-shadow: var(--nav-background);
+  box-shadow: var(--main-box-shadow);
   transition-duration: 0.3s;
   bottom: 20px; /* Adjust as needed */
   right: 20px; /* Adjust as needed */
@@ -92,18 +92,10 @@ input[type="submit"]:hover {
   color: transparent;
 }
 
-.Btn:hover svg {
-  right: 43%;
-  margin: 0;
-  padding: 0;
-  border: none;
-  transition-duration: 0.3s;
-}
-
 .Btn:active {
   transform: translate(3px, 3px);
   transition-duration: 0.3s;
-  box-shadow: 2px 2px 0px rgb(140, 32, 212);
+  box-shadow: var(--main-box-shadow);
 }
 
 #openButton:hover {
