@@ -38,7 +38,7 @@
 }
 
 /* Form styling */
-form.classname {
+form {
   display: flex;
   flex-direction: column;
 }
@@ -81,8 +81,8 @@ input[type="submit"]:hover {
   font-weight: 500;
   cursor: pointer;
   border-radius: 50px;
-  box-shadow:  var(--nav-background);
-  transition-duration: .3s;
+  box-shadow: var(--nav-background);
+  transition-duration: 0.3s;
   bottom: 20px; /* Adjust as needed */
   right: 20px; /* Adjust as needed */
   z-index: 9999;
@@ -97,15 +97,14 @@ input[type="submit"]:hover {
   margin: 0;
   padding: 0;
   border: none;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .Btn:active {
-  transform: translate(3px , 3px);
-  transition-duration: .3s;
+  transform: translate(3px, 3px);
+  transition-duration: 0.3s;
   box-shadow: 2px 2px 0px rgb(140, 32, 212);
 }
-
 
 #openButton:hover {
   background-color: var(--nav-background);
