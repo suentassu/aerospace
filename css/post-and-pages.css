@@ -267,6 +267,19 @@ a.corousel-link {
   background-color: var(--mid-gray);
 }
 
+
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+.slider .slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+
+
 .slider-course-info {
   display: flex;
   width: 100%;
