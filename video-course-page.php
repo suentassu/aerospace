@@ -80,42 +80,42 @@ get_header();
 
                         <!-- Video 5 -->
                         <?php if (!empty($video5)) : ?>
-                        <div class="video-wrapper content" id="video4" style="display: none;">
+                        <div class="video-wrapper content" id="video5" style="display: none;">
                                 <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video5); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
                         <?php endif; ?>
 
                         <!-- Video 6 -->
                         <?php if (!empty($video6)) : ?>
-                        <div class="video-wrapper content" id="video4" style="display: none;">
+                        <div class="video-wrapper content" id="video6" style="display: none;">
                                 <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video6); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
                         <?php endif; ?>
 
                         <!-- Video 7 -->
                         <?php if (!empty($video7)) : ?>
-                        <div class="video-wrapper content" id="video4" style="display: none;">
+                        <div class="video-wrapper content" id="video7" style="display: none;">
                                 <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video7); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
                         <?php endif; ?>
 
                         <!-- Video 8 -->
                         <?php if (!empty($video8)) : ?>
-                        <div class="video-wrapper content" id="video4" style="display: none;">
+                        <div class="video-wrapper content" id="video8" style="display: none;">
                                 <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video8); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
                         <?php endif; ?>
 
                         <!-- Video 9 -->
                         <?php if (!empty($video9)) : ?>
-                        <div class="video-wrapper content" id="video4" style="display: none;">
+                        <div class="video-wrapper content" id="video9" style="display: none;">
                                 <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video9); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
                         <?php endif; ?>
 
                         <!-- Video 10 -->
                         <?php if (!empty($video10)) : ?>
-                        <div class="video-wrapper content" id="video4" style="display: none;">
+                        <div class="video-wrapper content" id="video10" style="display: none;">
                                 <iframe frameborder="0" width="100%" height="100%" src="<?php echo esc_url($video10); ?>" allowfullscreen allow="autoplay=0"></iframe>
                         </div>
                         <?php endif; ?>
