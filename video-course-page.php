@@ -181,42 +181,42 @@ get_header();
                         <!-- Video 5 Button -->
                         <?php if (!empty($video5)) : ?>
                         <div class="content-button-video">
-                                <button onclick="toggleContent('video4')" class="content-button" id="video4-button"><i class="fa-solid fa-video icon-margin"></i> <?php the_field('video5_name'); ?></button>
+                                <button onclick="toggleContent('video5')" class="content-button" id="video5-button"><i class="fa-solid fa-video icon-margin"></i> <?php the_field('video5_name'); ?></button>
                         </div>
                         <?php endif; ?>
 
                         <!-- Video 6 Button -->
                         <?php if (!empty($video6)) : ?>
                         <div class="content-button-video">
-                                <button onclick="toggleContent('video4')" class="content-button" id="video4-button"><i class="fa-solid fa-video icon-margin"></i> <?php the_field('video6_name'); ?></button>
+                                <button onclick="toggleContent('video6')" class="content-button" id="video6-button"><i class="fa-solid fa-video icon-margin"></i> <?php the_field('video6_name'); ?></button>
                         </div>
                         <?php endif; ?>
 
                         <!-- Video 7 Button -->
                         <?php if (!empty($video7)) : ?>
                         <div class="content-button-video">
-                                <button onclick="toggleContent('video4')" class="content-button" id="video4-button"><i class="fa-solid fa-video icon-margin"></i> <?php the_field('video7_name'); ?></button>
+                                <button onclick="toggleContent('video7')" class="content-button" id="video7-button"><i class="fa-solid fa-video icon-margin"></i> <?php the_field('video7_name'); ?></button>
                         </div>
                         <?php endif; ?>
 
                         <!-- Video 8 Button -->
                         <?php if (!empty($video8)) : ?>
                         <div class="content-button-video">
-                                <button onclick="toggleContent('video4')" class="content-button" id="video4-button"><i class="fa-solid fa-video icon-margin"></i> <?php the_field('video8_name'); ?></button>
+                                <button onclick="toggleContent('video8')" class="content-button" id="video8-button"><i class="fa-solid fa-video icon-margin"></i> <?php the_field('video8_name'); ?></button>
                         </div>
                         <?php endif; ?>
 
                         <!-- Video 9 Button -->
                         <?php if (!empty($video9)) : ?>
                         <div class="content-button-video">
-                                <button onclick="toggleContent('video4')" class="content-button" id="video4-button"><i class="fa-solid fa-video icon-margin"></i> <?php the_field('video9_name'); ?></button>
+                                <button onclick="toggleContent('video9')" class="content-button" id="video9-button"><i class="fa-solid fa-video icon-margin"></i> <?php the_field('video9_name'); ?></button>
                         </div>
                         <?php endif; ?>
 
                         <!-- Video 10 Button -->
                         <?php if (!empty($video10)) : ?>
                         <div class="content-button-video">
-                                <button onclick="toggleContent('video4')" class="content-button" id="video4-button"><i class="fa-solid fa-video icon-margin"></i> <?php the_field('video10_name'); ?></button>
+                                <button onclick="toggleContent('video10')" class="content-button" id="video10-button"><i class="fa-solid fa-video icon-margin"></i> <?php the_field('video10_name'); ?></button>
                         </div>
                         <?php endif; ?>
 
